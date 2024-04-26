@@ -12,8 +12,8 @@ title: "Juniper"
 title_separator: "-"
 name: &name "Zhuoyi Cheng"
 description: &description "HCI student at Zhejiang University"
-url: https://juniper1106.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/zy_cheng" # the subpath of your site, e.g. "/blog"
+url: https://juniper1106.github.io/zy_cheng # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "Juniper1106/zy_cheng"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
