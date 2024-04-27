@@ -30,4 +30,4 @@ Setting up the local environment most be the moooooost annoying step across the 
 
 First, you should run `bundle list` in the command line in VS Code to get all dependencies you need. Then you can try to run `jekyll serve -l -H localhost`. I met two problems when running `jekyll serve -l -H localhost` in VS Code, one is the **TZInfo** problem, and another is **jekyll-sass-converter 3.0.0 problem**.
 
-Solutions were quite direct as they were provided in the error info. For the former one, refer to [tzinfo Github](https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors), and for the latter one, just do as what the error info told you: Prepending `bundle exec` to your command may solve this, that is, run `bundle exec jekyll serve -l -H localhost`.
+Solutions were quite direct as they were provided in the error info. For the former one, refer to [tzinfo Github](https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors), and for the latter one, just do as what the error info told you: Prepending `bundle exec` to your command may solve this, that is, run `bundle exec jekyll serve -l -H localhost` instead.
