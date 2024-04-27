@@ -21,7 +21,7 @@ repository: "Juniper1106/zy_cheng"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile.png"
+  avatar: "profile_400x400.webp"
   name: "Zhuoyi Cheng"
   pronouns: # example: "she/her"
   bio: "Second year Master student in Industrial Design Engineering"
@@ -73,7 +73,7 @@ author:
   zhihu: # URL
 
 # Site Settings
-teaser: "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
 future: true
