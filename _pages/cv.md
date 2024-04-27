@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+# permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
@@ -11,9 +11,8 @@ redirect_from:
 
 # Education
 
-- Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-- M.S. in Jekyll, GitHub University, 2014
-- B.S. in GitHub, GitHub University, 2012
+- M.S. in Industrial Design Engineering, Zhejiang University, (09/2022 - Present)
+- B.Eng in Industrial Design, Zhejiang University (09/2018 - 06/2022)
 
 # Work experience
 

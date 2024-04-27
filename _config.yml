@@ -12,7 +12,7 @@ title: "Juniper"
 title_separator: "-"
 name: &name "Zhuoyi Cheng"
 description: &description "HCI student at Zhejiang University"
-url: https://juniper1106.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://juniper1106.github.io/zy_cheng # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "Juniper1106/zy_cheng"
 
@@ -24,9 +24,9 @@ author:
   avatar: "profile.png"
   name: "Zhuoyi Cheng"
   pronouns: # example: "she/her"
-  bio: "Short biography for the left-hand sidebar"
+  bio: "Second year Master student in Industrial Design Engineering"
   location: "Hangzhou, China"
-  employer: "Zhejiang University"
+  employer: "IDI, Zhejiang University"
   uri: # URL
   email: "zy_cheng@zju.edu.cn"
 
@@ -42,12 +42,12 @@ author:
   bitbucket: # Username - Update with your username on the site
   codepen: # Username
   dribbble: # Username
-  github: "academicpages"
+  github: "https://github.com/Juniper1106"
   kaggle: # Username
   stackoverflow: # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
-  bluesky: "bsky.app" # Replace this with you Bluesky username
+  bluesky: # Replace this with you Bluesky username
   facebook: # Username
   flickr: # Username
   foursquare: # Username
@@ -64,7 +64,7 @@ author:
   steam: # Username
   telegram: # URL
   tumblr: # Username
-  twitter: # Username for X / Twitter
+  twitter: "@zyCHENG_ELF" # Username for X / Twitter
   vine: # Username
   weibo: # Username
   wikipedia: # Username
@@ -73,7 +73,7 @@ author:
   zhihu: # URL
 
 # Site Settings
-teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser: "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
 future: true
