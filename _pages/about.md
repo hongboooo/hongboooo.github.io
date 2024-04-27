@@ -11,7 +11,7 @@ redirect_from:
 
 I am a second year Master student in the school of Software Technology at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) and [Dr. Pei Chen](https://scholar.google.com/citations?hl=en&user=T4oYmPUAAAAJ&view_op=list_works&sortby=pubdate) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University. My current research seeks to enable AI agent as a design collaborator. I am interested in delineating human-AI collaborative dynamics in the design process to develop appropriate design collaboration strategies for AI agents.
 
-# Publications<a id="Publications"></a>
+# Workings<a id="Workings"></a>
 
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
