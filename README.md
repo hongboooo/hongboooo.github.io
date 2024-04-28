@@ -4,6 +4,7 @@ This website is forked from [academicpages/academicpages.github.io](https://gith
 
 # Updates
 
+- 04.29.2024, build customized Working blocks.
 - 04.26.2024, forked this template and published my personal website!
 
 # Building Logs
