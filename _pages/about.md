@@ -17,7 +17,7 @@ I am a second year Master student in the school of Software Technology at Zhejia
   <!-- img -->
   <div class="working-img">
     <div class="working-img-layout_box">
-      <img src="../images/500x300.png">
+      <img src="../images/HierVid-cover.webp">
     </div>
   </div>
   <!-- content-paper -->
