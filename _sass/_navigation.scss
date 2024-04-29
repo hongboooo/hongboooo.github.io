@@ -201,12 +201,23 @@
     cursor: pointer;
   }
 
+  // from czy
+  .nav-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // end from czy
+
   .visible-links {
     display: table;
+    // display: block;
+    // justify-content: space-between;
 
     li {
       display: table-cell;
-      vertical-align: middle;
+      // display: block;
+      // vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
