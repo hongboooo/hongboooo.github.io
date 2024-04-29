@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include base_path %}
+
 # About Me<a id="About"></a>
 
 I am a second year Master student in the school of Software Technology at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) and [Dr. Pei Chen](https://scholar.google.com/citations?hl=en&user=T4oYmPUAAAAJ&view_op=list_works&sortby=pubdate) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University. My current research seeks to enable AI agent as a design collaborator. I am interested in delineating human-AI collaborative dynamics in the design process to develop appropriate design collaboration strategies for AI agents.
@@ -17,7 +19,7 @@ I am a second year Master student in the school of Software Technology at Zhejia
   <!-- img -->
   <div class="working-img">
     <div class="working-img-layout_box">
-      <img src="../images/HierVid-cover.webp">
+      <img src="{{ base_path }}/images/HierVid-cover.webp">
     </div>
   </div>
   <!-- content-paper -->
