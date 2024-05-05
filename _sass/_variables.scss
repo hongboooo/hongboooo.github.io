@@ -107,16 +107,6 @@ $link-color-visited: mix(#fff, $link-color, 25%);
 $masthead-link-color: $primary-color;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%);
 
-/*
-Colors - by czy
-========================================================================== */
-
-// $pearl-sapphire-blue: #0a3aca;
-
-// $text-color-czy: #13151c;
-
-/* links */
-// $link-color: $pearl-sapphire-blue;
 
 /*
    Breakpoints
@@ -135,7 +125,11 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 925px !default;
-$x-large: 1080px !default;
+// $x-large: 1280px !default;
+$x-large: 1240px !default; // modified by czy
+
+/* main width control */
+$x-large_max-width: 1080px !default; // add by czy
 
 /*
    Grid
@@ -154,12 +148,12 @@ $susy: (
   gutter-position: after,
   container: $large,
   global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),,,,,,,
+  debug: (
+    image: show,
+    color: rgba(0, 0, 255, 0.455),
+    output: overlay,
+    toggle: top right,
+  )
 );
 
 /*
