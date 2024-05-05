@@ -6,13 +6,21 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  // padding-left: 1em;
+  // padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: $x-large_max-width;
+    // max-width: $x-large;
+  }
+
+  @include breakpoint($large) {
+    max-width: $x-large_max-width;
+    width: auto;
+    margin-left: 71.6px;
+    margin-right: 71.6px;
   }
 }
 
