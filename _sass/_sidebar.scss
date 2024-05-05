@@ -13,7 +13,8 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
+  // @media screen and (min-width: $sidebar-screen-min-width) {
+  @media screen and (min-width: $large) {
     height: 100vh;
     overflow-y: auto; // Add scrollbar if the sidebar is too long
     position: fixed;
@@ -21,7 +22,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    // @include span(2 of 12);  // delete margin-right (weird)
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
