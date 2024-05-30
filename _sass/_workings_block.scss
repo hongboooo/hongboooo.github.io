@@ -14,6 +14,11 @@
   .working-img {
     grid-column: 1/3;
     padding-top: 5px; //counterbalance box shadow
+
+    @media screen and (max-width: 925px) and (min-width: $large), (max-width: $small) {
+      display: none;
+      visibility: hidden;
+    }
   }
   
   .working-img-layout_box{
@@ -34,6 +39,10 @@
   
   .working-content {
     grid-column: 3/7;
+
+    @media screen and (max-width: 925px) and (min-width: $large), (max-width: $small) {
+      grid-column: 1/7;
+    }
   }
   
   .working-content > div {
