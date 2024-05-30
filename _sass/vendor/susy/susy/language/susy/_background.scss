@@ -83,7 +83,8 @@ $susy-overlay-grid-head-exists: false;
 // -------------------------
 @mixin overlay-trigger {
   content: "|||";
-  display: block;
+  // display: block;
+  display: none;
   padding: 5px 10px;
   font: {
     family: sans-serif;
