@@ -44,7 +44,7 @@ I am a second year Master student in the school of Software Technology at Zhejia
       </p>
     </div>
     <div class="working-paper-attachment">
-      <a class="attachment-btn" href="../files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
