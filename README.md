@@ -4,6 +4,7 @@ This website is forked from [academicpages/academicpages.github.io](https://gith
 
 # Updates
 
+- 05.31.2024, modified the navbar, body, and sidebar layout, now they are fully responsive!!! (unless you device is smaller than 260px lol.)
 - 04.29.2024, build customized Working blocks.
 - 04.26.2024, forked this template and published my personal website!
 
@@ -32,3 +33,13 @@ Setting up the local environment most be the moooooost annoying step across the 
 First, you should run `bundle list` in the command line in VS Code to get all dependencies you need. Then you can try to run `jekyll serve -l -H localhost`. I met two problems when running `jekyll serve -l -H localhost` in VS Code, one is the **TZInfo** problem, and another is **jekyll-sass-converter 3.0.0 problem**.
 
 Solutions were quite direct as they were provided in the error info. For the former one, refer to [tzinfo Github](https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors), and for the latter one, just do as what the error info told you: Prepending `bundle exec` to your command may solve this, that is, run `bundle exec jekyll serve -l -H localhost` instead.
+
+## Beautify
+### Flex navbar
+The original navbar was kinda...ugly because of ill alignment. I did the following:
+1. Included all navbar items (the name, menu items, and the hidden button) in a new flex div.
+2. Separate the three items.
+   1. As the name and menu items were previously controlled by the class "visible-links", the two were both included in a ul with "visible-links" class in case unexpected situation happens (still happened, the codes were sooooooooooo intertwined!!!).
+   2. button was moved to last.
+   3. Some other refurbishments.
+Step 2 led to a consequence that the button would never show up due to its impact on the `updateNav()` function in js file. But I don't wanna give up the neat flex layout or make major revisions to masthead.html. So I defined a "button-compulsory" class to set a breakpoint at 520px and compulsurily controlled its display and visibility :) (corresponding modifications were also made to other navbar items). 
