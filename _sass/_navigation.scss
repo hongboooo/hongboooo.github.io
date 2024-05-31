@@ -196,9 +196,10 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
+    background-color: $background-color;
     color: #fff;
     cursor: pointer;
+    z-index: 100;
   }
 
   // from czy
@@ -271,6 +272,11 @@
     border-radius: $border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
+
+    @media screen and (min-width: 520px) {
+      display: none;
+      visibility: hidden;
+    }
 
     a {
       margin: 0;
@@ -440,5 +446,23 @@
     @include breakpoint($medium) {
       display: block;
     }
+  }
+}
+
+// add by czy
+#nav-items {
+  @media screen and (max-width: 520px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.button-compulsory {
+  display: block;
+  visibility: visible;
+
+  @media screen and (min-width: 520px) {
+    display: none;
+    visibility: hidden;
   }
 }
