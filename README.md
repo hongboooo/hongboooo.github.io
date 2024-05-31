@@ -37,9 +37,11 @@ Solutions were quite direct as they were provided in the error info. For the for
 ## Beautify
 ### Flex navbar
 The original navbar was kinda...ugly because of ill alignment. I did the following:
+
 1. Included all navbar items (the name, menu items, and the hidden button) in a new flex div.
 2. Separate the three items.
    1. As the name and menu items were previously controlled by the class "visible-links", the two were both included in a ul with "visible-links" class in case unexpected situation happens (still happened, the codes were sooooooooooo intertwined!!!).
    2. button was moved to last.
    3. Some other refurbishments.
+
 Step 2 led to a consequence that the button would never show up due to its impact on the `updateNav()` function in js file. But I don't wanna give up the neat flex layout or make major revisions to masthead.html. So I defined a "button-compulsory" class to set a breakpoint at 520px and compulsurily controlled its display and visibility :\) (corresponding modifications were also made to other navbar items). 
