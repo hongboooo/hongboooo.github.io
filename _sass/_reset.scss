@@ -28,12 +28,14 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #000;
+  background: $info-color;
+  // background: #000;
 }
 
 ::selection {
   color: #fff;
-  background: #000;
+  background: $info-color;
+  // background: #000;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
