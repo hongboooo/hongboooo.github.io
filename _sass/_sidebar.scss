@@ -304,7 +304,15 @@
 }
 
 /* added by czy */
-
+.author__urls{
+  a>i {
+    @media screen and (max-width: $large) {
+      &:hover {
+        color: $info-color;
+      }
+    }
+  }
+}
 
 // topbar on small screen
 .topbar {
