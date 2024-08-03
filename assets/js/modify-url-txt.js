@@ -1,4 +1,4 @@
-window.onload = function() {myFunction()};
+window.onload = function() {modTxt()};
 
 let brkp = 860;
     
