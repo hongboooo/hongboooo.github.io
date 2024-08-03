@@ -1,4 +1,4 @@
-# Welcome to [Juniper's website!](https://juniper1106.github.io/zy_cheng/)
+# Welcome to [Juniper's website!](https://juniper1106.github.io/)
 
 This website is forked from [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io) and edited and maintained by Zhuoyi Cheng.
 
