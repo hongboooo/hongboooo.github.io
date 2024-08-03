@@ -13,7 +13,8 @@ body {
   padding-bottom: 9em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 2;
+  text-align: justify;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -59,6 +60,16 @@ small, .small {
 
 p {
   margin-bottom: 1.3em;
+
+  // hyphen
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-chars: 6 3 3;
 }
 
 u,
