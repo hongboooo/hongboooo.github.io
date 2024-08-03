@@ -65,10 +65,10 @@
 
   p,
   li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-family: $global-font-family;
+    font-size: $type-size-5_5;
     line-height: 1.5;
-    max-width: 175px;
+    max-width: 200px;
     @media screen and (max-width: $large){
       max-width: 250px;
       margin-top: 8px;
@@ -103,8 +103,8 @@
 .author__avatar {
   // display: table-cell;
   vertical-align: top;
-  max-width: 144px; // modified by czy
-  margin-bottom: 1em;
+  max-width: 200px; // modified by czy
+  margin-bottom: 1.25em;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -115,7 +115,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 200px;
     border-radius: 5%;
 
     @include breakpoint($large) {
@@ -274,6 +274,7 @@
 
   li {
     white-space: nowrap;
+    margin-bottom: 8px;
     
     @media screen and (max-width: $large) {
       margin: 0;
@@ -283,12 +284,12 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 14px;
     text-decoration: none;
 
     &:hover {

@@ -13,14 +13,20 @@ $paragraph-indent: false; // true, false (default)
 $indent-var: 1.3em;
 
 /* system typefaces */
-$serif: Georgia, Times, serif;
-$sans-serif: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
-  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif: 'Merriweather', -apple-system, Georgia, Times, serif;
+// $sans-serif: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+//   "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif: "Merriweather Sans", -apple-system, Tahoma, Geneva, Verdana, sans-serif, Helvetica, "Helvetica Neue", Arial;
 $monospace: Monaco, Consolas, "Lucida Console", monospace;
-// czy
-$serif-2: 'Merriweather', Georgia, Times, serif;
-$sans-serif-2: "Merriweather Sans", Helvetica, "Helvetica Neue", Arial, sans-serif;
-$monospace-2: Monaco, Consolas, "Lucida Console", monospace;
+
+// $serif-2: 'Alice', Georgia, Times, serif;
+// $serif-3: 'Merriweather', Georgia, Times, serif;
+// $serif-4: 'Quattrocento', Georgia, Times, serif;
+// $serif-5: 'Spectral', Georgia, Times, serif;
+// $sans-serif-2: 'Karla', Tahoma, Geneva, Verdana, sans-serif, Helvetica, "Helvetica Neue", Arial;
+// $sans-serif-3: "Merriweather Sans", Tahoma, Geneva, Verdana, sans-serif, Helvetica, "Helvetica Neue", Arial;
+// $sans-serif-4: "Quattrocento Sans", Tahoma, Geneva, Verdana, sans-serif, Helvetica, "Helvetica Neue", Arial;
+// $monospace-2: Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif;
@@ -34,8 +40,8 @@ $calisto: "Calisto MT", serif;
 $garamond: Garamond, serif;
 
 // $global-font-family: $sans-serif;
-$global-font-family: $serif-2; // modified by czy
-$header-font-family: $sans-serif-2;
+$global-font-family: $sans-serif; // modified by czy
+$header-font-family: $sans-serif;
 $caption-font-family: $serif;
 
 /* type scale */
@@ -44,6 +50,7 @@ $type-size-2: 1.953em; // ~31.248px
 $type-size-3: 1.563em; // ~25.008px
 $type-size-4: 1.25em; // ~20px
 $type-size-5: 1em; // ~16px
+$type-size-5_5: 0.875em; // ~14px
 $type-size-6: 0.75em; // ~12px
 $type-size-7: 0.6875em; // ~11px
 $type-size-8: 0.625em; // ~10px
@@ -111,7 +118,6 @@ $link-color-hover: mix(#000, $link-color, 25%);
 $link-color-visited: mix(#fff, $link-color, 25%);
 $masthead-link-color: $primary-color;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%);
-
 
 /*
    Breakpoints
