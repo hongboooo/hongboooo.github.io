@@ -11,7 +11,7 @@ redirect_from:
 
 # About Me<a id="About"></a>
 
-I am a second year Master student in the school of Software Technology at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University. My current research seeks to enable AI agent as a design collaborator. I am interested in delineating human-AI collaborative dynamics in the design process to develop appropriate design collaboration strategies for AI agents.
+Hi! My name is Zhuoyi Cheng (程卓艺). I am a second year Master student in the school of Software Technology at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University. My current research seeks to enable AI agent as a collaborator in the design context. I am interested in delineating human-AI collaborative dynamics in the collaboration process, which helps develop guidelines to navigate the design of human-AI collaborative systems.
 
 <div class="separate-section common-paragraph"></div>
 
@@ -57,7 +57,7 @@ I am a second year Master student in the school of Software Technology at Zhejia
 
 **Zhejiang University**<br>
 M.S. in Industrial Design Engineering, School of Software Technology<br>
-Advisor: [Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao)<br>
+Advisor: Lingyun Sun<br>
 09/2022 - Present
 
 **Zhejiang University**<br>
