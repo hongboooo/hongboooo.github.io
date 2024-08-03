@@ -275,7 +275,7 @@
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
-    @media screen and (min-width: 520px) {
+    @media screen and (min-width: 760px) {
       display: none;
       visibility: hidden;
     }
@@ -453,7 +453,7 @@
 
 // add by czy
 #nav-items {
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 760px) {
     display: none;
     visibility: hidden;
   }
@@ -463,7 +463,7 @@
   display: block;
   visibility: visible;
 
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 760px) {
     display: none;
     visibility: hidden;
   }
