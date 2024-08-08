@@ -55,6 +55,12 @@
   
   .working-paper-title {
     font-weight: 400;
+
+    p {
+      a {
+        color: $text;
+      }
+    }
   }
   
   .working-paper-author {
@@ -71,18 +77,18 @@ margin-top: 6px;
 }
   
 .attachment-btn{
-border: 2px solid $highlight;
+border: 2px solid $text;
 /* background-color: #0f52ba; */
-color: $highlight;
+color: $text;
 padding: 4px 6px;
 margin-right: 8px;
 border-radius: 5px;
 font-size: $type-size-6;
 
     &:hover {
-        border: 2px solid $background;
-        background-color: $highlight-shadow;
-        color: white;
+        border: 2px solid $highlight;
+        // background-color: $highlight-shadow;
+        color: $highlight;
     }
 }
 
