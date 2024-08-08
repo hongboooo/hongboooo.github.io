@@ -320,7 +320,7 @@
   a>i {
     @media screen and (max-width: $large) {
       &:hover {
-        color: $info-color;
+        color: $highlight;
       }
     }
   }

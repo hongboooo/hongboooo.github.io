@@ -28,13 +28,13 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: $info-color;
+  background: $highlight;
   // background: #000;
 }
 
 ::selection {
   color: #fff;
-  background: $info-color;
+  background: $highlight;
   // background: #000;
 }
 
