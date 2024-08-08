@@ -28,14 +28,16 @@ $masthead-link-color-hover: mix(#000, $primary-color, 25%);
 /* light theme */
 // $background: #fff;
 // $text: #1d2228;
-// $highlight: #dc7121;
-// $highlight-shadow: #be6320;
+// $highlight: #dc7c0b;
+// $highlight-shadow: #be6c10;
+// $background-shadow: #1d2228;
 
 /* dark theme */
 $background: #1d2228;
 $text: #d2d3d4;
-$highlight: #fb8022;
-$highlight-shadow: #be6320;
+$highlight: #ff9a32;
+$highlight-shadow: #fb8d02;
+$background-shadow: #d2d3d4;
 
 /* brands */
 $behance-color: #1769ff;

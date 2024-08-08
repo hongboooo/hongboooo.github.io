@@ -102,10 +102,10 @@
     }
 
     a {
+      color: $highlight;
+
       &:hover {
-        color: $link-color-hover;
-        border-bottom-style: dotted;
-        border-bottom-color: $info-color;
+        color: $highlight-shadow;
       }
     }
   }

@@ -71,17 +71,17 @@ margin-top: 6px;
 }
   
 .attachment-btn{
-border: 2px solid $link-color;
+border: 2px solid $highlight;
 /* background-color: #0f52ba; */
-color: $link-color;
+color: $highlight;
 padding: 4px 6px;
 margin-right: 8px;
 border-radius: 5px;
 font-size: $type-size-6;
 
     &:hover {
-        border: 2px solid white;
-        background-color: $link-color;
+        border: 2px solid $background;
+        background-color: $highlight-shadow;
         color: white;
     }
 }
