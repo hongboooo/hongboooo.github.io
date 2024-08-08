@@ -3,12 +3,11 @@
         display: block;
         margin: 0 1rem;
         padding: 0.5rem 0;
-        color: $masthead-link-color;
+        color: $text;
         text-decoration: none;
 
         &:hover {
-            color: $info-color; // modified by czy
-            // color: $masthead-link-color-hover;
+            color: $highlight; // modified by czy
             cursor: pointer;
         }
 
