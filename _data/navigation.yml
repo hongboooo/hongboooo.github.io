@@ -1,10 +1,10 @@
 # main links links
 main:
   - title: "About"
-    url: /#About
+    url: /
 
   - title: "Workings"
-    url: /#Workings
+    url: /workings
 
   # - title: "Talks"
   #   url: /talks/
@@ -18,8 +18,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-  - title: "Education"
-    url: /#Education
+  # - title: "Education"
+  #   url: /#Education
 
   - title: "CV"
     url: /cv/
