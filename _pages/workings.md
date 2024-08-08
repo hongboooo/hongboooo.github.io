@@ -1,5 +1,5 @@
 ---
-permalink: /Workings/
+permalink: /workings/
 title: "Juniper | Workings"
 author_profile: true
 ---
