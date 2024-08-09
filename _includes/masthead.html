@@ -17,7 +17,7 @@
               {% endif %}
               <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
-              <li class="masthead__menu-item toggle-mode" id="mode-toggler" onclick="toggleMode()"><i id="Light-mode" class="bi bi-moon-stars-fill"></i></li>
+              <li class="masthead__menu-item toggle-mode" id="mode-toggler"><i id="Light-mode" class="bi bi-moon-stars-fill"></i></li>
           </ul>
           <ul class="hidden-links">
             {% for link in site.data.navigation.main %}
@@ -36,4 +36,4 @@
     </div>
   </div>
 </div>
-<div class="sticky-toggle" id="sticky-mode-toggler" onclick="toggleMode()"><i id="Light-mode" class="bi bi-moon-stars-fill"></i></div>
+<div class="sticky-toggle" id="sticky-mode-toggler"><i id="Light-mode" class="bi bi-moon-stars-fill"></i></div>
