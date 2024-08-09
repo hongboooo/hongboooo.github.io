@@ -65,7 +65,9 @@
 
     p {
       a {
-        color: $text;
+        @include themed() {
+          color: t(text);
+        }
       }
     }
   }
@@ -85,20 +87,20 @@ margin-top: 6px;
 }
   
 .attachment-btn{
-border: 2px solid $text;
-/* background-color: #0f52ba; */
-color: $text;
-padding: 4px 6px;
-margin-right: 8px;
-border-radius: 5px;
-font-size: $type-size-6;
+  @include themed() {
+    border: 2px solid t(text);
+    color: t(text);
+  }
+  padding: 4px 6px;
+  margin-right: 8px;
+  border-radius: 5px;
+  font-size: $type-size-6;
 
     &:hover {
       @include themed() {
         border: 2px solid t(highlight);
         color: t(highlight);
       }
-      // background-color: $highlight-shadow;
     }
 }
 

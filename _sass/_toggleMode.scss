@@ -3,7 +3,6 @@
         display: block;
         margin: 0 1rem;
         padding: 0.5rem 0;
-        // color: $text;
         @include themed() {
             color: t(text);
         }
@@ -34,10 +33,12 @@
         justify-content: center;
         width: 32px;
         height: 32px;
-        background-color: rgba($background-shadow, .5);
         border-radius: 100px;
-        border-color: $background-shadow;
-        box-shadow: 0 0 8px rgba($background-shadow, .25);
+        @include themed() {
+            background-color: rgba(t(background), .5);
+            border-color: t(background-shadow);
+            box-shadow: 0 0 8px rgba(t(background-shadow), .25);
+        }
     
         position: fixed;
         right: 8px;
@@ -48,6 +49,12 @@
         i {
             vertical-align: 0;
             font-size: $type-size-5_5;
+
+            &:hover {
+                @include themed() {
+                    color: t(highlight);
+                }
+            }
         }
     }
 }

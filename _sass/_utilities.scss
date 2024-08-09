@@ -235,7 +235,6 @@ body:hover .visually-hidden button {
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
-    // color: $text;
     @include themed() {
       color: t(text);
     }
@@ -335,11 +334,25 @@ body:hover .visually-hidden button {
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  // background: #fff;
-  background: $text;
+  @include themed() {
+    background: t(text);
+  }
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+
+  &:hover {
+    @include themed() {
+      background: t(highlight);
+    }
+
+    &:before,
+    &:after {
+      @include themed() {
+        background: t(highlight);
+      }
+    }
+  }
 
   &:before,
   &:after {
@@ -348,8 +361,9 @@ body:hover .visually-hidden button {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    // background: #fff;
-    background: $text;
+    @include themed() {
+      background: t(text);
+    }
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -367,6 +381,9 @@ body:hover .visually-hidden button {
   /* hide the middle line*/
   background: transparent;
 
+  &:hover {
+    background: transparent;
+  }
   /* overlay the lines by setting both their top values to 0*/
   &:before, &:after{
     -webkit-transform-origin: 50% 50%;
