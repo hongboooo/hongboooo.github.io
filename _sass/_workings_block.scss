@@ -15,10 +15,6 @@
     grid-column: 1/3;
     padding-top: 5px; //counterbalance box shadow
 
-    // @media screen and (max-width: 925px) and (min-width: $large), (max-width: $small) {
-    //   display: none;
-    //   visibility: hidden;
-    // }
     @media screen and (max-width: $large) {
       display: none;
       visibility: hidden;
@@ -26,7 +22,9 @@
   }
   
   .working-img-layout_box{
-    box-shadow: 0 0 5px 1px $light-gray;
+    @include themed() {
+      box-shadow: 0 0 5px 1px rgba(t(working-img-shadow), .25);
+    }
   }
   
   .working-img-layout_box > img {
@@ -73,7 +71,9 @@
   }
   
   .working-paper-author {
-    font-weight: 300;
+    @include themed() {
+      font-weight: t(working-paper-author-font-weight);
+    }
     font-size: 14px;
 }
 
