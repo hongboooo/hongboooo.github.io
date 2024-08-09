@@ -23,6 +23,7 @@ main:
 
   - title: "CV"
     url: /cv/
+    # url: /files/HierVid.pdf
 
   # - title: "Guide"
   #   url: /markdown/
