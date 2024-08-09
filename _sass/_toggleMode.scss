@@ -3,7 +3,10 @@
         display: block;
         margin: 0 1rem;
         padding: 0.5rem 0;
-        color: $text;
+        // color: $text;
+        @include themed() {
+            color: t(text);
+        }
         text-decoration: none;
 
         &:hover {

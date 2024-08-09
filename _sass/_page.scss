@@ -14,6 +14,10 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @include themed() {
+    background: t(background);
+  }
+
   @include breakpoint($x-small) {
     padding-left: 36px;
     padding-right: 36px;
@@ -102,7 +106,9 @@
     }
 
     a {
-      color: $highlight;
+      @include themed() {
+        color: t(highlight);
+      }
 
       &:hover {
         color: $highlight-shadow;

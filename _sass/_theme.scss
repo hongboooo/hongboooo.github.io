@@ -1,8 +1,16 @@
-$background: #1d2228;
-$text: #d2d3d4;
-$highlight: #ff9a32;
-$highlight-shadow: #fb8d02;
-$background-shadow: #d2d3d4;
+// $background: #1d2228;
+// $text: #d2d3d4;
+// $highlight: #ff9a32;
+// $highlight-shadow: #fb8d02;
+// $background-shadow: #d2d3d4;
+
+$background: #fff;
+$text: #1d2228;
+$highlight: #dc7c0b;
+$highlight-shadow: #be6c10;
+$background-shadow: #1d2228;
+
+
 
 $themes: (
     /* light theme */
@@ -29,8 +37,8 @@ $themes: (
         .theme--#{$theme} & {
             $theme-map: () !global;
             @each $key, $submap in $map {
-            $value: map-get(map-get($themes, $theme), '#{$key}');
-            $theme-map: map-merge($theme-map, ($key: $value)) !global;
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
             }
             @content;
             $theme-map: null !global;

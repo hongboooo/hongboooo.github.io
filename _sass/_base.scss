@@ -5,14 +5,21 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
-  background-color: $background;
+  @include themed() {
+    background-color: t(background);
+  }
+  // background-color: $background;
 }
 
 body {
   margin: 0;
   padding: $masthead-height 0 0;
   // padding-bottom: 9em;
-  color: $text;
+  // color: $text;
+  @include themed() {
+    color: t(text);
+    background-color: t(background);
+  }
   font-family: $global-font-family;
   line-height: 2;
   text-align: justify;

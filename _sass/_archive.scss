@@ -20,7 +20,9 @@
 
     &:hover {
       text-decoration: none;
-      color: $highlight;
+      @include themed() {
+        color: t(highlight);
+      }
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

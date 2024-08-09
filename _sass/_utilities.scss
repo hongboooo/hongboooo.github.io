@@ -200,7 +200,9 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: $text;
+    @include themed() {
+      color: t(text);
+    }
   }
 
   .fa-bluesky,
@@ -233,7 +235,10 @@ body:hover .visually-hidden button {
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
-    color: $text;
+    // color: $text;
+    @include themed() {
+      color: t(text);
+    }
   }
 
   .fa-google-plus,

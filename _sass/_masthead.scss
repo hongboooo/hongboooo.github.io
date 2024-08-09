@@ -4,7 +4,10 @@
 
 .masthead {
   position: fixed;
-  background: $background;
+  @include themed() {
+    background: t(background);
+  }
+  // background: $background;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
@@ -74,7 +77,9 @@
     // add by czy
     a {
       font-size: $type-size-4;
-      color: $highlight;
+      @include themed() {
+        color: t(highlight);
+      }
     }
     // end add by czy
   }
