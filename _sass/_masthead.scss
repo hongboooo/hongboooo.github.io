@@ -7,7 +7,6 @@
   @include themed() {
     background: t(background);
   }
-  // background: $background;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
