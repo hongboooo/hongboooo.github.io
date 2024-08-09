@@ -29,10 +29,10 @@
         justify-content: center;
         width: 32px;
         height: 32px;
-        background-color: rgba($color: $background-shadow, $alpha: .5);
+        background-color: rgba($background-shadow, .5);
         border-radius: 100px;
         border-color: $background-shadow;
-        box-shadow: 0 0 8px rgba($color: $background-shadow, $alpha: .25);
+        box-shadow: 0 0 8px rgba($background-shadow, .25);
     
         position: fixed;
         right: 8px;

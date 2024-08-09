@@ -331,7 +331,7 @@ body:hover .visually-hidden button {
   width: $navicon-width;
   height: $navicon-height;
   // background: #fff;
-  background: $highlight;
+  background: $text;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -344,7 +344,7 @@ body:hover .visually-hidden button {
     width: $navicon-width;
     height: $navicon-height;
     // background: #fff;
-    background: $highlight;
+    background: $text;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
