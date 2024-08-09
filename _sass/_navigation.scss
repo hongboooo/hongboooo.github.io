@@ -293,7 +293,9 @@
       font-size: $type-size-5;
 
       &:hover {
-        color: $highlight;
+        @include themed() {
+          color: t(highlight);
+        }
         // background: mix(#fff, $primary-color, 75%);
       }
     }

@@ -28,14 +28,17 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: $highlight;
+  @include themed() {
+    background: t(highlight);
+  }
   // background: #000;
 }
 
 ::selection {
   color: #fff;
-  background: $highlight;
-  // background: #000;
+  @include themed() {
+    background: t(highlight);
+  }
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */

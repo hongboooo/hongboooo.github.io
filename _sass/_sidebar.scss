@@ -308,7 +308,9 @@
   a>i {
     @media screen and (max-width: $large) {
       &:hover {
-        color: $highlight;
+        @include themed() {
+          color: t(highlight);
+        }
       }
     }
   }

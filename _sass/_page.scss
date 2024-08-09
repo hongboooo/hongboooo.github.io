@@ -111,7 +111,9 @@
       }
 
       &:hover {
-        color: $highlight-shadow;
+        @include themed() {
+          color: t(highlight-shadow);
+        }
       }
     }
   }

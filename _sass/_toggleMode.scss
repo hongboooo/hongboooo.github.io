@@ -10,7 +10,9 @@
         text-decoration: none;
 
         &:hover {
-            color: $highlight; // modified by czy
+            @include themed() {
+                color: t(highlight);
+            }
             cursor: pointer;
         }
 
