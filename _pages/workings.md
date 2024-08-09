@@ -1,7 +1,10 @@
 ---
+layout: archive
+title: "Workings"
 permalink: /workings/
-title: "Juniper | Workings"
 author_profile: true
+redirect_from:
+  - /resume
 ---
 
 {% include base_path %}
