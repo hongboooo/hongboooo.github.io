@@ -6,8 +6,8 @@
   position: fixed;
   @include themed() {
     background: t(background);
+    border-bottom: 1px solid t(header_footer-divider);
   }
-  border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
   width: 100%;
