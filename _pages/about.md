@@ -25,5 +25,5 @@ Advisor: Lingyun Sun<br>
 09/2022 - Present
 
 **Zhejiang University**<br>
-B.Eng in Industrial Design, College of Computer Science<br>
+B.Eng in Industrial Design, College of Computer Science and Technology<br>
 09/2018 - 06/2022
