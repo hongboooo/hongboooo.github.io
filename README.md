@@ -4,6 +4,7 @@ This website is forked from [academicpages/academicpages.github.io](https://gith
 
 # Updates
 
+- 08.09.2024, enabled dark theme and modified contents.
 - 05.31.2024, modified the navbar, body, and sidebar layout, now they are fully responsive!!! (unless you device is smaller than 260px lol.)
 - 04.29.2024, build customized Working blocks.
 - 04.26.2024, forked this template and published my personal website!
@@ -44,4 +45,14 @@ The original navbar was kinda...ugly because of ill alignment. I did the followi
    2. button was moved to last.
    3. Some other refurbishments.
 
-Step 2 led to a consequence that the button would never show up due to its impact on the `updateNav()` function in js file. But I don't wanna give up the neat flex layout or make major revisions to masthead.html. So I defined a "button-compulsory" class to set a breakpoint at 520px and compulsurily controlled its display and visibility :\) (corresponding modifications were also made to other navbar items). 
+Step 2 led to a consequence that the button would never show up due to its impact on the `updateNav()` function in js file. But I don't wanna give up the neat flex layout or make major revisions to masthead.html. So I defined a "button-compulsory" class to set a breakpoint at 520px and compulsurily controlled its display and visibility :\) (corresponding modifications were also made to other navbar items).
+
+### Toggle themes
+Many thanks to [Katie McTigue](https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995) for the tutorial and ChatGPT for debugging.
+
+Katie's tutorial provided the basis, but modifications were needed to fit in my site (using JavaScript instead of React).
+
+1. Add the default class (`theme--light` or `theme--dark` in my case) to the root element, and I added `theme--light` to the `<html>` element (press F12 or commond+option+i to see the source code).
+2. When calling the function in scss, the $ symbol should be dropped, using `t(color)` instead of `t($color)`.
+3. Use a toggle button to toggle the class name, I realized this by js.
+4. (*optional) Use local storage in js to remember the theme when the page is reloaded, solution provided by ChatGPT.
