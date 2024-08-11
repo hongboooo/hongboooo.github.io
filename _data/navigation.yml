@@ -22,8 +22,8 @@ main:
   #   url: /#Education
 
   - title: "CV"
-    url: /cv/
-    # url: /files/HierVid.pdf
+    # url: /cv/
+    url: /files/CV-Zhuoyi_Cheng.pdf
 
   # - title: "Guide"
   #   url: /markdown/
