@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 # Workings<a id="Workings"></a>
-Last updated: Aug. 9, 2024.
+Last updated: Aug 9, 2024.
 
 ## Publications
 
