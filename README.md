@@ -6,7 +6,7 @@ This website is forked from [academicpages/academicpages.github.io](https://gith
 
 - 08.09.2024, enabled dark theme and modified contents.
 - 05.31.2024, modified the navbar, body, and sidebar layout, now they are fully responsive!!! (unless you device is smaller than 260px lol.)
-- 04.29.2024, build customized Working blocks.
+- 04.29.2024, build customized Research blocks.
 - 04.26.2024, forked this template and published my personal website!
 
 # Building Logs
