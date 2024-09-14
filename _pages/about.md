@@ -11,9 +11,17 @@ redirect_from:
 
 # About Me
 
-Hi! My name is Hongbo. I am a second year Phd student in the school of Software Technology at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University.
+Hi😊! My name is Hongbo. I am Phd Candidate in the College of Computer Science at Zhejiang University. I'm working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao) at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University. My main research area is in Human-Computer Interaction (HCI) and Design Science. My work has been publshed at top-tire HCI, such as TOCHI, IJHCS, UIST, CSCW, and IJHCI.
 
-My current research seeks to enable AI agent as a collaborator in the design context. I am interested in delineating human-AI collaborative dynamics in the collaboration process, which helps develop guidelines to navigate the design of human-AI collaborative systems. Prior to this, I was studying the narrative structures in the authoring process of interactive videos.
+I work on intuitive human-computer interaction 👐 & iteractive Human-AI co-creation 🤖.
+
+In the intuitive human-computer interaction, I explore natural and direct interaction modes, including gesture interaction, body-based interaction, multi-sensory interaction, and XR interaction. Aiming to improve the user experience, efficiency, and intuition through interaction mode innovation.
+
+In the iteractive Human-AI co-creation, I explore the mechanism of Human-AI communication and cooperation. I focus on user-centered interacive AI system, investigating the role, cooperation mode, and contribution type of AI agent in co-creation process.
+
+I also focuse on the combination of the two aforementioned directions. I explore the intuitive interaction + GenAI in creative work for efficiency enhancement and creativity support. I have conducted several studies to study "AR + GenAI", "TUI + GenAI".
+
+
 
 <div class="separate-section common-paragraph"></div>
 
