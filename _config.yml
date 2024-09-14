@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Juniper / Zhuoyi Cheng"
+title: "Alex / Hongo Zhang"
 title_separator: "-"
-name: &name "Zhuoyi Cheng"
-description: &description "HCI student at Zhejiang University"
-url: https://juniper1106.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name: &name "Hongbo Zhang"
+description: &description "HCI Phd Candidate at Zhejiang University"
+url: https://hongboooo.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "Juniper1106/Juniper1106.github.io"
+repository: "hongboooo/hongboooo.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,7 +22,7 @@ repository: "Juniper1106/Juniper1106.github.io"
 author:
   # Biographic information
   avatar: "profile_400x400.webp"
-  name: "Zhuoyi Cheng"
+  name: "Hongbo Zhang"
   pronouns: # example: "she/her"
   bio: "Second year Master student in Industrial Design Engineering"
   location: "Hangzhou, China"
