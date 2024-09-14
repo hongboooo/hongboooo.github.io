@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to Juniper's Page!"
+title: "Welcome to xxxxxxs Page!"
 author_profile: true
 redirect_from:
   - /about/
