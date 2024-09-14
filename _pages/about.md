@@ -19,7 +19,7 @@ In the intuitive human-computer interaction, I explore natural and direct intera
 
 In the iteractive Human-AI co-creation, I explore the mechanism of Human-AI communication and cooperation. I focus on user-centered interacive AI system, investigating the role, cooperation mode, and contribution type of AI agent in co-creation process.
 
-I also focuse on the combination of the two aforementioned directions. I explore the intuitive interaction + GenAI in creative work for efficiency enhancement and creativity support. I have conducted several studies to study "AR + GenAI", "TUI + GenAI".
+I also focuse on the combination of the two aforementioned directions. I explore the intuitive interaction + GenAI in creative work for efficiency enhancement and creativity support. I have conducted several studies in "AR + GenAI", "TUI + GenAI".
 
 
 
