@@ -69,7 +69,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
@@ -99,14 +99,14 @@ Last updated: Sep, 2024.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <a href="https://doi.org/10.1080/10447318.2023.2267859">
+        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
         IEDS: Exploring an Intelli-Embodied Design Space combining designer, AR, and GAI to Support Conceptual Design
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Hongbo Zhang,</strong> Pei Chen, Jingwen Yang, Yifei Wu, Zhaoqu Jiang, Xuelong Xie, Wutao You & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Jingwen Yang, Yifei Wu, Zhaoqu Jiang, Xuelong Xie, Wutao You & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
@@ -137,14 +137,14 @@ Last updated: Sep, 2024.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <a href="https://doi.org/10.1080/10447318.2023.2267859">
+        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
         FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Yifei Wu, Zejian Li, Xiaoyu Chen & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Yifei Wu, Zejian Li, Xiaoyu Chen & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
@@ -161,9 +161,58 @@ Last updated: Sep, 2024.
   </div>
 </div>
 
-
+<div class="separate-section"></div>
 
 ## Intuitive Human-computer Interaction 👐
+
+
+
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1016/j.ijhcs.2023.103198">
+        Elicitation and Evaluation of Hand-based Interaction Language for 3D Conceptual Design in Mixed Reality
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Lingyun Sun, <strong>Hongbo Zhang,</strong> Pei Chen*, Zhaoqu Jiang, Xuelong Xie, Zihong Zhou, Xuanhui Liu, & Xiaoyu Chen
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+       International Journal of Human Computer Studies (IJHCS), 2023
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="separate-section"></div>
+
+
+
 <div class="research-basic">
   <!-- img -->
   <div class="research-img">
@@ -175,19 +224,19 @@ Last updated: Sep, 2024.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <!-- <a href=""> -->
-        Now You Know Me: Exploring the Adaptation and Application of Workspace Awareness Framework in Human-AI Design Collaboration
-        <!-- </a> -->
+        <a href="https://doi.org/10.1016/j.ijhcs.2023.103198">
+        The Effect of Tablet Computer Configurations and Touchscreen Gestures on Human Biomechanics, Performance, and Subjective Assessment
+        </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Zhuoyi Cheng</strong>, Pei Chen*, Jiayi Yao & Lingyun Sun
+      Jinghua Huang,<strong>Hongbo Zhang*</strong>, Lujin Mao, Dongliang Zhang, Jianfeng Li, Tiancheng Ji & Runze Han
       </p>
     </div>
     <div class="research-paper-venue">
       <p>
-      International Journal of Human-Computer Studies, Under Review
+      International Journal of Human-Computer Interaction (IJHCI), 2022
       </p>
     </div>
     <!-- <div class="research-paper-attachment">
@@ -198,32 +247,39 @@ Last updated: Sep, 2024.
     </div> -->
   </div>
 </div>
+
+
+
+
+
 <div class="separate-section"></div>
+
+
 
 <div class="research-basic">
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/design_journal.webp">
+      <img src="{{ base_path }}/images/paper_img/Now_You_Know_Me.webp">
     </div>
   </div>
   <!-- content-paper -->
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <!-- <a href=""> -->
-          An Exploratory Study on How AI's Awareness Impacts Human-AI Collaboration in Product Design
+        <!-- <a href="https://doi.org/10.1016/j.ijhcs.2023.103198"> -->
+        Painting++: Human-Computer Collaborative Painting in VR with Multisensory Interaction
         <!-- </a> -->
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Zhuoyi Cheng</strong>, Pei Chen*, Wenzheng Song, Hongbo Zhang, Zhuoshu Li & Lingyun Sun
+      Zhuoshu Li, Pei Chen, <strong>Hongbo Zhang*</strong>, Yexinrui Wu, Xuanhui Liu & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
       <p>
-      The Design Journal, Under Review
+      Displays, Under Review
       </p>
     </div>
     <!-- <div class="research-paper-attachment">
@@ -234,7 +290,3 @@ Last updated: Sep, 2024.
     </div> -->
   </div>
 </div>
-<div class="separate-section"></div>
-
-
-
