@@ -172,7 +172,7 @@ Last updated: Sep, 2024.
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+      <img src="{{ base_path }}/images/paper_img/ijhcs.png">
     </div>
   </div>
   <!-- content-paper -->
@@ -217,7 +217,7 @@ Last updated: Sep, 2024.
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/Now_You_Know_Me.webp">
+      <img src="{{ base_path }}/images/paper_img/ijhci.png">
     </div>
   </div>
   <!-- content-paper -->
@@ -260,7 +260,7 @@ Last updated: Sep, 2024.
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/Now_You_Know_Me.webp">
+      <img src="{{ base_path }}/images/paper_img/painting.png">
     </div>
   </div>
   <!-- content-paper -->
