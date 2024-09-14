@@ -48,7 +48,84 @@ Last updated: Aug 9, 2024.
     </div>
   </div>
 </div>
-<!-- <div class="separate-section"></div> -->
+
+<div class="separate-section"></div>
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1080/10447318.2023.2267859">
+        HierVid: Lowering the Barriers to Entry of Interactive Video Making with a Hierarchical Authoring System
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Weitao You, <strong>Zhuoyi Cheng,</strong> Zirui Ma, Guang Yang, Zhibin Zhou & Lingyun Sun*
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      International Journal of Human-Computer Interaction, Published in Nov 03, 2023
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1080/10447318.2023.2267859">
+        HierVid: Lowering the Barriers to Entry of Interactive Video Making with a Hierarchical Authoring System
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Weitao You, <strong>Zhuoyi Cheng,</strong> Zirui Ma, Guang Yang, Zhibin Zhou & Lingyun Sun*
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      International Journal of Human-Computer Interaction, Published in Nov 03, 2023
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 ## Manuscripts
 <div class="research-basic">
