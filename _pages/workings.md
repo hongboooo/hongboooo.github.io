@@ -55,7 +55,7 @@ Last updated: Sep, 2024.
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+      <img src="{{ base_path }}/images/paper_img/uist.png">
     </div>
   </div>
   <!-- content-paper -->
@@ -282,11 +282,11 @@ Last updated: Sep, 2024.
       Displays, Under Review
       </p>
     </div>
-    <!-- <div class="research-paper-attachment">
+    <div class="research-paper-attachment">
       <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
-    </div> -->
+    </div>
   </div>
 </div>
