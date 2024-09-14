@@ -10,9 +10,9 @@ redirect_from:
 {% include base_path %}
 
 # Research
-Last updated: Aug 9, 2024.
+Last updated: Sep, 2024.
 
-## Publications
+## Iteractive Human-AI Co-creation 🤖
 
 <div class="research-basic">
   <!-- img -->
@@ -25,19 +25,56 @@ Last updated: Aug 9, 2024.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <a href="https://doi.org/10.1080/10447318.2023.2267859">
-        HierVid: Lowering the Barriers to Entry of Interactive Video Making with a Hierarchical Authoring System
+        <a href="https://doi.org/10.1145/3689433">
+        A Hybrid Prototype Method Combining Physical Models and Generative Artificial Intelligence to Support Creativity in Conceptual Design
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      Weitao You, <strong>Zhuoyi Cheng,</strong> Zirui Ma, Guang Yang, Zhibin Zhou & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun*
       </p>
     </div>
     <div class="research-paper-venue">
       <p>
-      International Journal of Human-Computer Interaction, Published in Nov 03, 2023
+      ACM Transaction on Computer Human Interaction (TOCHI), 2024
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="separate-section"></div>
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/HierVid-cover.webp">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1145/3654777.3676399">
+        ProtoDreamer: A Mixed-prototype Tool Combining Physical Model and Generative AI to Support Conceptual Design
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun*
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      ACM Symposium on User Interface Software and Technology (UIST ’24), 2024
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -63,18 +100,18 @@ Last updated: Aug 9, 2024.
     <div class="research-paper-title">
       <p>
         <a href="https://doi.org/10.1080/10447318.2023.2267859">
-        HierVid: Lowering the Barriers to Entry of Interactive Video Making with a Hierarchical Authoring System
+        IEDS: Exploring an Intelli-Embodied Design Space combining designer, AR, and GAI to Support Conceptual Design
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      Weitao You, <strong>Zhuoyi Cheng,</strong> Zirui Ma, Guang Yang, Zhibin Zhou & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen, Jingwen Yang, Yifei Wu, Zhaoqu Jiang, Xuelong Xie, Wutao You & Lingyun Sun*
       </p>
     </div>
     <div class="research-paper-venue">
       <p>
-      International Journal of Human-Computer Interaction, Published in Nov 03, 2023
+       International Journal of Human Computer Studies (IJHCS), Under Review
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -87,6 +124,7 @@ Last updated: Aug 9, 2024.
 </div>
 
 
+<div class="separate-section"></div>
 
 <div class="research-basic">
   <!-- img -->
@@ -100,18 +138,18 @@ Last updated: Aug 9, 2024.
     <div class="research-paper-title">
       <p>
         <a href="https://doi.org/10.1080/10447318.2023.2267859">
-        HierVid: Lowering the Barriers to Entry of Interactive Video Making with a Hierarchical Authoring System
+        FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      Weitao You, <strong>Zhuoyi Cheng,</strong> Zirui Ma, Guang Yang, Zhibin Zhou & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Yifei Wu, Zejian Li, Xiaoyu Chen & Lingyun Sun*
       </p>
     </div>
     <div class="research-paper-venue">
       <p>
-      International Journal of Human-Computer Interaction, Published in Nov 03, 2023
+       ACM CHI Conference on Human Factors in Computing Systems (CHI’25), Under Review
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -125,9 +163,7 @@ Last updated: Aug 9, 2024.
 
 
 
-
-
-## Manuscripts
+## Intuitive Human-computer Interaction 👐
 <div class="research-basic">
   <!-- img -->
   <div class="research-img">
@@ -199,3 +235,6 @@ Last updated: Aug 9, 2024.
   </div>
 </div>
 <div class="separate-section"></div>
+
+
+
