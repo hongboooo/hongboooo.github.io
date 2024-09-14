@@ -11,7 +11,7 @@ locale: "en-US"
 title: "Alex / Hongo Zhang"
 title_separator: "-"
 name: &name "Hongbo Zhang"
-description: &description "HCI Phd Candidate at Zhejiang University"
+description: &description "Zhejiang University"
 url: https://hongboooo.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "hongboooo/hongboooo.github.io"
@@ -26,7 +26,7 @@ author:
   pronouns: # example: "she/her"
   bio: "Phd Candidate"
   location: "Hangzhou, China"
-  employer: "CS College, Zhejiang University"
+  employer: "Zhejiang University"
   uri: # URL
   email: "hongbozhang@zju.edu.cn"
 
