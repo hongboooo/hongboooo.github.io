@@ -25,7 +25,7 @@ Hi😊! My name is Hongbo. I am a Phd Candidate in the College of Computer Scien
 **Intuitive Human-computer Interaction 👐**<br>
 I explore natural and direct interaction modes, including gesture interaction, embodied interaction, and XR interaction. Aiming to improve the user experience, efficiency, and intuition through interaction mode innovation.
 
-**Iteractive Human-AI Co-creation 🤖**<br>
+**Interactive Human-AI Co-creation 🤖**<br>
 I explore the mechanism of Human-AI communication and cooperation. I focus on user-centered interacive AI system, investigating the role, cooperation mode, and contribution type of AI agent in co-creation process.
 
 **Embodied & Generative System 👐 + 🤖**<br>
