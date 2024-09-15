@@ -32,7 +32,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Hongbo Zhang,</strong> Pei Chen, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun*
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
@@ -101,7 +101,7 @@ Last updated: Sep, 2024.
       <p>
         <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
         IEDS: Exploring an Intelli-Embodied Design Space combining designer, AR, and GAI to Support Conceptual Design
-        </a>
+        <!-- </a> -->
       </p>
     </div>
     <div class="research-paper-author">
@@ -138,8 +138,8 @@ Last updated: Sep, 2024.
     <div class="research-paper-title">
       <p>
         <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
-        FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual
-        </a>
+        FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual Transition and Simulation
+        <!-- </a> -->
       </p>
     </div>
     <div class="research-paper-author">
@@ -239,12 +239,12 @@ Last updated: Sep, 2024.
       International Journal of Human-Computer Interaction (IJHCI), 2022
       </p>
     </div>
-    <!-- <div class="research-paper-attachment">
+    <div class="research-paper-attachment">
       <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
-    </div> -->
+    </div>
   </div>
 </div>
 
