@@ -41,7 +41,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/tochi.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
@@ -78,7 +78,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/uist.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
@@ -115,7 +115,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/IEDS.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
@@ -186,7 +186,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      Lingyun Sun, <strong>Hongbo Zhang,</strong> Pei Chen*, Zhaoqu Jiang, Xuelong Xie, Zihong Zhou, Xuanhui Liu, & Xiaoyu Chen
+      Lingyun Sun, <strong>Hongbo Zhang,</strong> Pei Chen*, Zhaoqu Jiang, Xuelong Xie, Zihong Zhou, Xuanhui Liu, & Xiaoyu Chen (First Student Author)
       </p>
     </div>
     <div class="research-paper-venue">
@@ -195,7 +195,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/ijhcs.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
@@ -224,14 +224,14 @@ Last updated: Sep, 2024.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <a href="https://doi.org/10.1016/j.ijhcs.2023.103198">
+        <a href="https://doi.org/10.1080/10447318.2022.2111051">
         The Effect of Tablet Computer Configurations and Touchscreen Gestures on Human Biomechanics, Performance, and Subjective Assessment
         </a>
       </p>
     </div>
     <div class="research-paper-author">
       <p>
-      Jinghua Huang,<strong>Hongbo Zhang*</strong>, Lujin Mao, Dongliang Zhang, Jianfeng Li, Tiancheng Ji & Runze Han
+      Jinghua Huang, <strong>Hongbo Zhang*</strong>, Lujin Mao, Dongliang Zhang, Jianfeng Li, Tiancheng Ji & Runze Han (First Student Author)
       </p>
     </div>
     <div class="research-paper-venue">
@@ -240,7 +240,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/ijhci.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
@@ -283,7 +283,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/display.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
