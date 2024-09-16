@@ -153,7 +153,7 @@ Last updated: Sep, 2024.
       </p>
     </div>
     <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/HierVid.pdf">
+      <a class="attachment-btn" href="{{ base_path }}/files/FusionProtor.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
