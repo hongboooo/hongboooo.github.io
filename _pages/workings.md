@@ -145,7 +145,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Yifei Wu, Zejian Li, Xiaoyu Chen & Lingyun Sun
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Yifei Wu, Zejian Li, Xiaoyu Chen & Lingyun Suns
       </p>
     </div>
     <div class="research-paper-venue">
