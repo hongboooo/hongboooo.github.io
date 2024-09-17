@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Research<a id="Research"></a>
+# Research<a id="Research"></a> -->
 
 ## Publications
 
