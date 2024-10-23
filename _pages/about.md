@@ -11,7 +11,7 @@ redirect_from:
 
 # ABOUT ME
 
-Hi😊My name is Hongbo. I am a Phd Candidate in the College of Computer Science at Zhejiang University. I'm majoring in Design Science and working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao).
+Hi😊~ My name is Hongbo. I am a Phd Candidate in the College of Computer Science at Zhejiang University. I'm majoring in Design Science and working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao).
  <!-- at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University.  -->
  My main research area is in Human-Computer Interaction (HCI). My work has been published at top-tire HCI venues, such as TOCHI, IJHCS, UIST, CSCW, and IJHCI.
 

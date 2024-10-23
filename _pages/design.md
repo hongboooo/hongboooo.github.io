@@ -12,7 +12,7 @@ redirect_from:
 # Research
 Last updated: Sep, 2024.
 <!-- 
-## Iteractive Human-AI Co-creation 🤖
+## Iteractive dasda Human-AI co-creation 🤖
 
 <div class="research-basic">
   <!-- img -->
@@ -279,7 +279,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-      Displays, Under Review
+      Displayssss, Under Review
       </p>
     </div>
     <div class="research-paper-attachment">

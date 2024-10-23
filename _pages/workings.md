@@ -12,7 +12,7 @@ redirect_from:
 # Research
 Last updated: Sep, 2024.
 
-## Iteractive Human-AI Co-creation 🤖
+## Generative & Interactive Prototyping ⭕️
 
 <div class="research-basic">
   <!-- img -->
@@ -162,11 +162,56 @@ Last updated: Sep, 2024.
   </div>
 </div>
 
+
+
+
+
 <div class="separate-section"></div>
 
-## Intuitive Human-computer Interaction 👐
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/cscw.png">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
+        Exploring the Role of Mixed Reality on Design Representations to Enhance User-involved Co-design Communication
+        <!-- </a> -->
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Pei Chen, Kexing Wang, Lianyan Liu, Xuanhui Liu, <strong>Hongbo Zhang,</strong>, Zhuyu Teng & Lingyun SUN
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+       ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW’25)
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/cscw.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
 
 
+
+
+
+
+<div class="separate-section"></div>
+
+## Intuitive & Immersive Interaction 👐
 
 
 <div class="research-basic">
@@ -203,6 +248,7 @@ Last updated: Sep, 2024.
     </div>
   </div>
 </div>
+
 
 
 
@@ -249,8 +295,6 @@ Last updated: Sep, 2024.
 <div class="separate-section"></div>
 
 
-<div class="separate-section"></div>
-
 
 
 <div class="research-basic">
@@ -287,3 +331,96 @@ Last updated: Sep, 2024.
     </div>
   </div>
 </div>
+
+<div class="separate-section"></div>
+
+
+## Cognition & Creativity in Human-AI Collaboration 🤖
+
+ 
+
+
+
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/tsc.png">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1016/j.ijhcs.2023.103198">
+        Modality and Fidelity: Understanding How Creative Stimulus Combinations Impact Design Outcomes and Process across Different Conceptual Design Phases
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Pei Chen, Zhuoshu Li, Yexinrui Wu, <strong>Hongbo Zhang,</strong> Jiaxuan Zhou & Lingyun Sun
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+       Thinking Skills and Creativity, 2024
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/tsc.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="separate-section"></div>
+
+
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/iui.png">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1080/10447318.2022.2111051">
+        An Exploratory Study on How AI Awareness Impacts Human-AI Design Collaboration
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Zhuoyi Cheng, Pei Chen*, Wenzheng Song, <strong>Hongbo Zhang*</strong> & Lingyun Sun
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      ACM Conference on Intelligent User Interfaces (IUI'2024), 2024, Under Review
+      </p>
+    </div>
+    <!-- <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/ijhci.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div> -->
+  </div>
+</div>
+
+
+<div class="separate-section"></div>
+
+
+
+
+<div class="research-basic">
