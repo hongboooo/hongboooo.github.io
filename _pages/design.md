@@ -274,7 +274,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      Zhuoshu Li, Pei Chen, <strong>Hongbo Zhang*</strong>, Yexinrui Wu, Xuanhui Liu & Lingyun Sun
+      Zhuoshu Li, Pei Chen, <strong>Hongbo Zhang*</strong>, Yexinru Wu, Xuanhui Liu & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
