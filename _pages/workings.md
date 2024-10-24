@@ -12,7 +12,7 @@ redirect_from:
 # Research
 Last updated: Sep, 2024.
 
-## Generative & Interactive Prototyping ⭕️
+## Generative & Interactive Prototyping ✂️
 
 <div class="research-basic">
   <!-- img -->
@@ -232,7 +232,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      Lingyun Sun, <strong>Hongbo Zhang,</strong> Pei Chen*, Zhaoqu Jiang, Xuelong Xie, Zihong Zhou, Xuanhui Liu, & Xiaoyu Chen (First Student Author)
+      Lingyun Sun, <strong>Hongbo Zhang,</strong> Pei Chen*, Zhaoqu Jiang, Xuelong Xie, Zihong Zhou, Xuanhui Liu & Xiaoyu Chen (First Student Author)
       </p>
     </div>
     <div class="research-paper-venue">
@@ -354,7 +354,7 @@ Last updated: Sep, 2024.
     <div class="research-paper-title">
       <p>
         <a href="https://doi.org/10.1016/j.ijhcs.2023.103198">
-        Modality and Fidelity: Understanding How Creative Stimulus Combinations Impact Design Outcomes and Process across Different Conceptual Design Phases
+        Modality and Fidelity: Understanding How Creative Stimulus Combinations Impact Design Outcomes and Process Across Different Conceptual Design Phases
         </a>
       </p>
     </div>
@@ -400,7 +400,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-author">
       <p>
-      Zhuoyi Cheng, Pei Chen*, Wenzheng Song, <strong>Hongbo Zhang*</strong> & Lingyun Sun
+      Zhuoyi Cheng, Pei Chen*, Wenzheng Song, <strong>Hongbo Zhang</strong> & Lingyun Sun
       </p>
     </div>
     <div class="research-paper-venue">
