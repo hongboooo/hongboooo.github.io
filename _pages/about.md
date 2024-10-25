@@ -30,7 +30,7 @@ I explore the mechanism of Human-AI communication and cooperation. I focus on us
 
 **Embodied & Generative System 👐 + 🤖**<br>
 I also focuse on the combination of the two aforementioned directions. I integrate intuitive interaction with GenAI in creative work for efficiency enhancement and creativity support, such as "AR + GenAI" and "TUI + GenAI". -->
- -->
+ <!-- --> 
 
 <!-- 
 **Zhejiang University**<br>
@@ -43,12 +43,13 @@ B.Eng in Industrial Design, College of Computer Science and Technology<br>
 09/2018 - 06/2022 -->
 
 
+# Research
 
 
 During my Phd, I think of my research in the three categories below.
 
 
-## 1️⃣Proposing User-centered Interactive and Generative Creation System
+### 1️⃣Proposing User-centered Interactive and Generative Creation System
 
 
 Generative AI has subverted the traditional creative mode. However, AI research always focuses on technological innovation, resulting in designers and creators still needing to adopt computer-centered interaction language (e.g., Bounding Box, semantic map) instead of their familiar design language and material (e.g., Sketch, Graphic Panel, Prototype). From the user-centered perspective, I integrate AI ability in creators’ familiar habits, materials, and tools, proposing efficient and easy-to-use systems.
@@ -57,7 +58,7 @@ Generative AI has subverted the traditional creative mode. However, AI research 
 
 <div class="separate-section common-paragraph"></div>
 
-## 2️⃣Exploring Intuitive and Embodied Creation Method in “AI+XR” 
+### 2️⃣Exploring Intuitive and Embodied Creation Method in “AI+XR” 
 
 Cognitive processes flow wherever it is cheaper to perform them, and the information representation modes are a way of changing creation and cognition. The creation space containing the physical world has distinct strengths, such as increasing sensorial stimuli, allowing tangible tests, and enhancing collaboration. I am interested in the intuitive and embodied creation method by combining AI and XR, exploring an intelligent, embodied, and generative creation space.
 
@@ -66,7 +67,7 @@ Cognitive processes flow wherever it is cheaper to perform them, and the informa
 
 <div class="separate-section common-paragraph"></div>
 
-## 3️⃣Understanding Cognition and Creativity in Human-AI Co-creation
+### 3️⃣Understanding Cognition and Creativity in Human-AI Co-creation
 
 Gen AI can be a co-creator, changing the traditional creation paradigm, as well as cognition and creativity. The generative variability and uncertainty effectively expanded designers’ creative exploration boundaries. It can also take over complex and tedious expression tasks so that designers can focus on creative contributions. I understand the cognition and creativity in human-AI co-creation. I also pay attention to the relationship between human&human and human&machine in co-creation.
 

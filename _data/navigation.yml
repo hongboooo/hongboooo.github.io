@@ -1,12 +1,12 @@
 # main links links
 main:
-  - title: "About"
+  - title: "Research"
     url: /
 
   # - title: "Research"
   #   url: /talks/
-  - title: "Research"
-    url: /markdown/
+  # - title: "Research"
+  #   url: /markdown/
 
 
   - title: "Publication"
