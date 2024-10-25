@@ -3,11 +3,16 @@ main:
   - title: "About"
     url: /
 
+  # - title: "Research"
+  #   url: /talks/
   - title: "Research"
+    url: /markdown/
+
+
+  - title: "Publication"
     url: /research/
 
-  # - title: "Talks"
-  #   url: /talks/
+
 
   # - title: "Teaching"
   #   url: /teaching/
@@ -31,7 +36,7 @@ main:
 
 # - title: "Design"
 #     # url: /cv/
-#     url: /files/CV-Hongbozhang.pdf
+#     url: /design/
 
-#   # - title: "Guide"
-#   #   url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
