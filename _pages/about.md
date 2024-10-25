@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# ABOUT ME
+# About Me
 
 Hi😊~ My name is <span style="color:#1a73e8">Hongbo</span>. I am a Phd Candidate in the College of Computer Science at Zhejiang University. I'm majoring in Design Science and working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao).
  <!-- at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University.  -->
@@ -54,7 +54,7 @@ During my Phd, I think of my research in the three categories below.
 
 Generative AI has subverted the traditional creative mode. However, AI research always focuses on technological innovation, resulting in designers and creators still needing to adopt computer-centered interaction language (e.g., Bounding Box, semantic map) instead of their familiar design language and material (e.g., Sketch, Graphic Panel, Prototype). From the user-centered perspective, I integrate AI ability in creators’ familiar habits, materials, and tools, proposing efficient and easy-to-use systems.
 
-<span style="color:grey">For example, from the perspective of design materials, I combine the physical prototype material familiar to designers with Gen AI (UIST’24). From the perspective of design procedure, I enable Gen AI to provide outputs based on the double-drill procedure, a classical design process, (IJHCS’25, Under Review). From the perspective of design methodology, I integrated traditional design methodologies (e.g., FBS, Co-Evolution) with Gen AI (IJHCI’25, Under Review).</span>
+<span style="color:grey">For example, from the perspective of design materials, I combined the physical prototype material familiar to designers with Gen AI (UIST’24). From the perspective of design procedure, I enabled Gen AI to provide outputs based on the double-drill procedure, a classical design process, (IJHCS’25, Under Review). From the perspective of design methodology, I integrated traditional design methodologies (e.g., FBS, Co-Evolution) with Gen AI (IJHCI’25, Under Review).</span>
 
 <div class="separate-section common-paragraph"></div>
 
