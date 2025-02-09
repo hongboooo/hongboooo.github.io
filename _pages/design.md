@@ -111,7 +111,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-       ACM CHI Conference on Human Factors in Computing Systems (CHI’25)
+       ACM CHI Conference on Human Factors in Computing Systems (CHI’25),2025
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -149,7 +149,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-       ACM CHI Conference on Human Factors in Computing Systems (CHI’25)
+       ACM CHI Conference on Human Factors in Computing Systems (CHI’25),2025
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -279,7 +279,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-      Displayssss, Under Review
+      Displays, Under Review
       </p>
     </div>
     <div class="research-paper-attachment">
