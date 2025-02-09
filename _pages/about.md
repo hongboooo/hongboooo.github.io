@@ -54,7 +54,7 @@ During my Phd, I think of my research in the three categories below.
 
 Generative AI has subverted the traditional creative mode. However, AI research always focuses on technological innovation, resulting in designers and creators still needing to adopt computer-centered interaction language (e.g., Bounding Box, semantic map) instead of their familiar design language and material (e.g., Sketch, Graphic Panel, Prototype). From the user-centered perspective, I integrate AI ability in creators’ familiar habits, materials, and tools, proposing efficient and easy-to-use systems.
 
-<span style="color:grey">For example, from the perspective of design materials, I combined the physical prototype material familiar to designers with Gen AI (UIST’24 <a href="https://doi.org/10.1080/10447318.2022.2111051">). From the perspective of design procedure, I enabled Gen AI to provide outputs based on the double-drill procedure, a classical design process, (CHI’25). From the perspective of design methodology, I integrated traditional design methodologies (e.g., FBS, Co-Evolution) with Gen AI (IJHCI’25).</span>
+<span style="color:grey">For example, from the perspective of design materials, I combined the physical prototype material familiar to designers with Gen AI (UIST’24 <a href="https://doi.org/10.1080/10447318.2022.2111051"></a>). From the perspective of design procedure, I enabled Gen AI to provide outputs based on the double-drill procedure, a classical design process, (CHI’25). From the perspective of design methodology, I integrated traditional design methodologies (e.g., FBS, Co-Evolution) with Gen AI (IJHCI’25).</span>
 
 <div class="separate-section common-paragraph"></div>
 
