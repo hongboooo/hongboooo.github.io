@@ -62,7 +62,7 @@ Generative AI has subverted the traditional creative mode. However, AI research 
 
 Cognitive processes flow wherever it is cheaper to perform them, and the information representation modes are a way of changing creation and cognition. The creation space containing the physical world has distinct strengths, such as increasing sensorial stimuli, allowing tangible tests, and enhancing collaboration. I am interested in the intuitive and embodied creation method by combining AI and XR, exploring an intelligent, embodied, and generative creation space.
 
-<span style="color:grey">For example, I proposed a prototype method combining the physical world and Gen AI (TOCHI’23). I explored the best practice of combining various AR approaches with Gen AI in different design tasks through empirical research (IJHCS’23, Under Review). Based on these theoretical guidelines, I utilized AR devices to implement embodied creation systems, such as Microsoft HoloLens (CSCW’25) and Apple Vision Pro (CHI’25).</span>
+<span style="color:grey">For example, I proposed a prototype method combining the physical world and Gen AI (TOCHI’23). I explored the best practice of combining various AR approaches with Gen AI in different design tasks through empirical research (CHI'25). Based on these theoretical guidelines, I utilized AR devices to implement embodied creation systems, such as Microsoft HoloLens (CSCW’25) and Apple Vision Pro (CHI’25).</span>
 
 
 <div class="separate-section common-paragraph"></div>
