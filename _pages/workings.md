@@ -111,7 +111,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-       International Journal of Human Computer Studies (IJHCS), Under Review
+       ACM CHI Conference on Human Factors in Computing Systems (CHI’25), 2025
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -150,7 +150,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-       ACM CHI Conference on Human Factors in Computing Systems (CHI’25), Under Review
+       ACM CHI Conference on Human Factors in Computing Systems (CHI’25), 2025
       </p>
     </div>
     <div class="research-paper-attachment">
@@ -405,7 +405,7 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-      ACM Conference on Intelligent User Interfaces (IUI'2024), 2024, Under Review
+      ACM Conference on Intelligent User Interfaces (IUI'2024), 2024
       </p>
     </div>
     <!-- <div class="research-paper-attachment">
