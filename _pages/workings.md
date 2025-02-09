@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 # Research
-Last updated: Sep, 2024.
+Last updated: Feb, 2025.
 
 ## Generative & Interactive Prototyping ✂️
 
@@ -405,15 +405,15 @@ Last updated: Sep, 2024.
     </div>
     <div class="research-paper-venue">
       <p>
-      ACM Conference on Intelligent User Interfaces (IUI'2024), 2024
+      ACM Conference on Intelligent User Interfaces (IUI'24), 2024
       </p>
     </div>
-    <!-- <div class="research-paper-attachment">
-      <a class="attachment-btn" href="{{ base_path }}/files/ijhci.pdf">
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/iui.pdf">
         <i class="bi bi-file-pdf-fill"></i>
         PDF
       </a>
-    </div> -->
+    </div>
   </div>
 </div>
 
