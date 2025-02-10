@@ -13,7 +13,7 @@ redirect_from:
 
 Hi😊~ My name is <span style="color:#1a73e8">Hongbo</span>. I am a Phd Candidate in the College of Computer Science at Zhejiang University. I'm majoring in Design Science and working with [Prof. Lingyun Sun](https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao).
  <!-- at the [International Design Institude (IDI)](http://www.idi.zju.edu.cn) of Zhejiang University.  -->
- I focus on Human-Computer Interaction (HCI). My main research area includes intelligent and generative system, XR + AI, and human-AI collaboration. My work has been published at some top-tire HCI venues, such as TOCHI, IJHCS, CHI, UIST, CSCW, and IJHCI.
+ I focus on Human-Computer Interaction (HCI). My main research area includes intelligent and generative system, XR + AI, and human-AI collaboration. My work has been published at some top-tire HCI venues, such as TOCHI, IJHCS, CHI, UIST, and CSCW.
 
 
 <!-- <div class="separate-section common-paragraph"></div> -->
