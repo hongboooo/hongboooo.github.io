@@ -72,6 +72,6 @@ Cognitive processes flow wherever it is cheaper to perform them, and the informa
 
 Gen AI can be a co-creator, changing the traditional creation paradigm, as well as cognition and creativity. The generative variability and uncertainty effectively expanded designers’ creative exploration boundaries. It can also take over complex and tedious expression tasks so that designers can focus on creative contributions. I understand the cognition and creativity in human-AI co-creation. I also pay attention to the relationship between human&human and human&machine in co-creation.
 
-<span style="color:grey">For example, I understand how creative stimulus combinations impact design outcomes and processes (Thinking Skill & Creativity’24). I also conducted an exploratory study on can AI awareness impact human-AI design collaboration (<a href="https://doi.org/10.1145/3708359.3712162">IUI'25</a>).</span>
+<span style="color:grey">For example, I understand how creative stimulus combinations impact design outcomes and processes (<a href="https://doi.org/10.1016/j.tsc.2024.101657">Thinking Skill & Creativity’24</a>). I also conducted an exploratory study on can AI awareness impact human-AI design collaboration (<a href="https://doi.org/10.1145/3708359.3712162">IUI'25</a>).</span>
 
 
