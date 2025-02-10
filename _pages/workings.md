@@ -418,6 +418,47 @@ Last updated: Feb, 2025.
 </div>
 
 
+
+
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/iui.png">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1080/10447318.2025.2453003">
+        GPSdesign: Integrating Generative AI with Problem-Solution Co-Evolution Network to Support Product Conceptual Design
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      Pei Chen, Yexinrui Wu, Zhuoshu Li, <strong>Hongbo Zhang</strong> Mingxu Zhou, Jiayi Yao, Weitao You & Lingyun Sun
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      International Journal of Human-Computer Interaction (IJHCI), 2025
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/GPSdesign.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <div class="separate-section"></div>
 
 
