@@ -425,7 +425,7 @@ Last updated: Feb, 2025.
   <!-- img -->
   <div class="research-img">
     <div class="research-img-layout_box">
-      <img src="{{ base_path }}/images/paper_img/iui.png">
+      <img src="{{ base_path }}/images/paper_img/gps.png">
     </div>
   </div>
   <!-- content-paper -->
@@ -457,11 +457,11 @@ Last updated: Feb, 2025.
 
 
 
-
+<!-- 
 
 <div class="separate-section"></div>
 
 
 
 
-<div class="research-basic">
+<div class="research-basic"> -->
