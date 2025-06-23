@@ -11,12 +11,6 @@ redirect_from:
 
 During my Phd, I think of my research in the three categories below.
 
-<!-- <div class="research-img">
-  <div class="research-img-layout_box">
-    <img src="{{ base_path }}/images/paper_img/tochi.png">
-  </div>
-</div> -->
-
 
 ## 1️⃣Proposing User-centered Interactive and Generative Creation System
 
