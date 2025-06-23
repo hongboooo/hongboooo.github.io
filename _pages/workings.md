@@ -99,7 +99,7 @@ Last updated: Feb, 2025.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
+        <a href="https://doi.org/10.1145/3706598.3713528">
         IEDS: Exploring an Intelli-Embodied Design Space combining designer, AR, and GAI to Support Conceptual Design
         <!-- </a> -->
       </p>
@@ -138,7 +138,7 @@ Last updated: Feb, 2025.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
+        <a href="https://doi.org/10.1145/3706598.3713686">
         FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual Transition and Simulation
         <!-- </a> -->
       </p>
@@ -180,7 +180,7 @@ Last updated: Feb, 2025.
   <div class="research-content">
     <div class="research-paper-title">
       <p>
-        <!-- <a href="https://doi.org/10.1080/10447318.2023.2267859"> -->
+        <a href="https://dl.acm.org/doi/10.1145/3710979">
         Exploring the Role of Mixed Reality on Design Representations to Enhance User-involved Co-design Communication
         <!-- </a> -->
       </p>
