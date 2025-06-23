@@ -101,7 +101,7 @@ Last updated: Feb, 2025.
       <p>
         <a href="https://doi.org/10.1145/3706598.3713528">
         IEDS: Exploring an Intelli-Embodied Design Space combining designer, AR, and GAI to Support Conceptual Design
-        <!-- </a> -->
+        </a> 
       </p>
     </div>
     <div class="research-paper-author">
@@ -140,7 +140,7 @@ Last updated: Feb, 2025.
       <p>
         <a href="https://doi.org/10.1145/3706598.3713686">
         FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual Transition and Simulation
-        <!-- </a> -->
+        </a> 
       </p>
     </div>
     <div class="research-paper-author">
