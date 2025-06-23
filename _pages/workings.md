@@ -182,7 +182,7 @@ Last updated: Feb, 2025.
       <p>
         <a href="https://dl.acm.org/doi/10.1145/3710979">
         Exploring the Role of Mixed Reality on Design Representations to Enhance User-involved Co-design Communication
-        <!-- </a> -->
+        </a>
       </p>
     </div>
     <div class="research-paper-author">
