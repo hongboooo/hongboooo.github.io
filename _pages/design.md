@@ -49,6 +49,47 @@ Last updated: Sep, 2024.
   </div>
 </div>
 
+
+<div class="research-basic">
+  <!-- img -->
+  <div class="research-img">
+    <div class="research-img-layout_box">
+      <img src="{{ base_path }}/images/paper_img/tochi.png">
+    </div>
+  </div>
+  <!-- content-paper -->
+  <div class="research-content">
+    <div class="research-paper-title">
+      <p>
+        <a href="https://doi.org/10.1145/3689433">
+        A Hybrid Prototype Method Combining Physical Models and Generative Artificial Intelligence to Support Creativity in Conceptual Design
+        </a>
+      </p>
+    </div>
+    <div class="research-paper-author">
+      <p>
+      <strong>Hongbo Zhang,</strong> Pei Chen*, Xuelong Xie, Zhaoqu Jiang, Zihong Zhou & Lingyun Sun
+      </p>
+    </div>
+    <div class="research-paper-venue">
+      <p>
+      ACM Transaction on Computer Human Interaction (CHI), 20262626
+      </p>
+    </div>
+    <div class="research-paper-attachment">
+      <a class="attachment-btn" href="{{ base_path }}/files/tochi.pdf">
+        <i class="bi bi-file-pdf-fill"></i>
+        PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 <div class="separate-section"></div>
 
 <div class="research-basic">
