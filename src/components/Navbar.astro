@@ -1,0 +1,89 @@
+---
+import ThemeToggle from './ThemeToggle.tsx';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Publications', href: '/publications' },
+  { label: 'About', href: '/about' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="bg-primary/80 backdrop-blur-xl border-b border-subtle">
+    <div class="container-page flex items-center justify-between h-16">
+      <!-- Brand -->
+      <a href="/" class="font-heading font-semibold text-lg tracking-tight hover:text-accent transition-colors">
+        Hongbo Zhang
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-1">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
+              currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href))
+                ? 'text-accent bg-accent/10'
+                : 'text-muted hover:text-[var(--text-primary)] hover:bg-[var(--bg-alt)]',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))}
+        <div class="ml-2">
+          <ThemeToggle client:load />
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <ThemeToggle client:load />
+        <button
+          id="mobile-menu-btn"
+          class="p-2 rounded-lg hover:bg-[var(--bg-alt)] transition-colors"
+          aria-label="Menu"
+        >
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-primary/95 backdrop-blur-xl border-b border-subtle"
+  >
+    <div class="container-page py-4 flex flex-col gap-1">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            'px-4 py-3 rounded-lg text-sm font-medium transition-all',
+            currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href))
+              ? 'text-accent bg-accent/10'
+              : 'text-muted hover:text-[var(--text-primary)] hover:bg-[var(--bg-alt)]',
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

@@ -1,0 +1,24 @@
+# ============================================
+# News / Updates
+# Add new entries at the top (newest first)
+# ============================================
+
+- date: "2025-03"
+  content: "Two papers accepted at **CHI 2025** — IEDS and FusionProtor!"
+  type: paper
+
+- date: "2025-02"
+  content: "Paper on MR co-design communication accepted at **CSCW 2025**."
+  type: paper
+
+- date: "2024-10"
+  content: "ProtoDreamer presented at **UIST 2024** in Pittsburgh."
+  type: talk
+
+- date: "2024-08"
+  content: "Paper on hybrid prototyping published in **ACM TOCHI**."
+  type: paper
+
+- date: "2024-06"
+  content: "GPSdesign accepted at **IJHCI 2025**."
+  type: paper

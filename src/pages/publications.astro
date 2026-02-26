@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import PublicationList from '../components/PublicationList.tsx';
+import papersRaw from '../data/papers.yaml';
+import categoriesRaw from '../data/research-areas.yaml';
+
+const papers = papersRaw as any[];
+const categories = categoriesRaw as any[];
+---
+
+<Layout title="Publications" description="Research publications by Hongbo Zhang in HCI, AI, and XR">
+  <Navbar />
+  <main class="container-wide pt-28 pb-16">
+    <PublicationList client:load papers={papers} categories={categories} />
+  </main>
+  <Footer />
+</Layout>

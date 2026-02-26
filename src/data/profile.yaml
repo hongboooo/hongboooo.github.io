@@ -1,0 +1,38 @@
+name: "Hongbo Zhang"
+nameZh: "张宏博"
+title: "PhD Candidate"
+affiliation: "Zhejiang University"
+department: "College of Computer Science"
+location: "Hangzhou, China"
+email: "hongbozhang@zju.edu.cn"
+avatar: "/images/profile_400x400.webp"
+tagline: "Designing Intuitive Human-AI Creative Systems"
+bio: |
+  I am a PhD Candidate in the College of Computer Science at Zhejiang University,
+  advised by Prof. Lingyun Sun. My research focuses on Human-Computer Interaction (HCI),
+  specifically on intelligent and generative systems, XR + AI, and human-AI collaboration
+  for creative design.
+advisor:
+  name: "Prof. Lingyun Sun"
+  url: ""
+keywords:
+  - "Human-Computer Interaction"
+  - "Generative AI"
+  - "Mixed Reality"
+  - "Creative Systems"
+links:
+  googleScholar: "https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao"
+  github: ""
+  twitter: ""
+  linkedin: ""
+cv: "/files/CV-Hongbozhang.pdf"
+portfolio: "/files/ZHANG Hongbo_PROFOILO.pdf"
+education:
+  - degree: "Ph.D. in Computer Science"
+    institution: "Zhejiang University"
+    period: "2022 - Present"
+    description: "Advised by Prof. Lingyun Sun. Research in HCI, generative AI systems, and XR."
+  - degree: "B.Eng. in Industrial Design"
+    institution: "Zhejiang University"
+    period: "2018 - 2022"
+    description: ""

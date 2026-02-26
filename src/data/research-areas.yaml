@@ -1,0 +1,17 @@
+- key: prototyping
+  title: "Generative & Interactive Prototyping"
+  icon: "scissors"
+  color: "#3D78F5"
+  description: "Integrating AI with creators' familiar tools and workflows to build efficient and intuitive generative creation systems."
+
+- key: interaction
+  title: "Intuitive & Immersive Interaction"
+  icon: "hand"
+  color: "#10B981"
+  description: "Combining AI and XR to explore intuitive, embodied creation methods in intelligent and generative design spaces."
+
+- key: cognition
+  title: "Cognition & Creativity in Human-AI Collaboration"
+  icon: "brain"
+  color: "#8B5CF6"
+  description: "Understanding cognition and creativity in human-AI co-creation, focusing on human-machine relationships in collaborative design."

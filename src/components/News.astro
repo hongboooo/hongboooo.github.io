@@ -1,0 +1,43 @@
+---
+import newsRaw from '../data/news.yaml';
+const news = (newsRaw as any[]).slice(0, 6); // Show latest 6
+
+const typeIcon: Record<string, string> = {
+  paper: '\u{1F4C4}',
+  talk: '\u{1F3A4}',
+  award: '\u{1F3C6}',
+  collaboration: '\u{1F91D}',
+  default: '\u{2728}',
+};
+---
+
+<section class="container-page py-16" data-animate>
+  <h2 class="font-heading text-2xl md:text-3xl font-bold tracking-tight mb-8">
+    News
+  </h2>
+
+  <div class="space-y-0 border-l-2 border-subtle ml-2">
+    {news.map((item: any, i: number) => (
+      <div
+        class="relative pl-6 pb-6 last:pb-0 group"
+        data-animate
+      >
+        {/* Timeline dot */}
+        <div class:list={[
+          'absolute -left-[5px] top-1.5 w-2 h-2 rounded-full border-2 transition-colors',
+          i === 0
+            ? 'bg-accent border-accent'
+            : 'bg-[var(--bg-primary)] border-[var(--border-color)] group-hover:border-accent',
+        ]} />
+
+        {/* Date */}
+        <span class="text-xs font-mono text-faint">{item.date}</span>
+
+        {/* Content — render markdown bold */}
+        <p class="text-sm text-muted mt-0.5 leading-relaxed" set:html={
+          (item.content as string).replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold" style="color: var(--text-primary)">$1</strong>')
+        } />
+      </div>
+    ))}
+  </div>
+</section>

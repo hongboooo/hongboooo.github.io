@@ -1,12 +1,21 @@
-# Ignore the contents of the _site directory
+# Build output
+dist/
 _site/
 
-# Ignore the directory for local files during development
-local/
+# Dependencies
+node_modules/
 
-# Ignore the Gemfile that is generated
+# Lock files
+package-lock.json
 Gemfile.lock
 
-# Ingore files created by npm
-node_modules
-package-lock.json
+# Astro
+.astro/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Development
+local/
+.claude/

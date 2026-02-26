@@ -1,0 +1,74 @@
+---
+import areasRaw from '../data/research-areas.yaml';
+import papersRaw from '../data/papers.yaml';
+const areas = areasRaw as any[];
+const papers = papersRaw as any[];
+
+// Count papers per category
+const counts: Record<string, number> = {};
+for (const p of papers) {
+  counts[p.category] = (counts[p.category] || 0) + 1;
+}
+
+const iconMap: Record<string, string> = {
+  scissors: 'M14.121 14.121L7.05 21.192a3 3 0 01-4.242-4.242l7.071-7.071m0 0L2.929 2.929m6.95 6.95L16.95 2.929m0 0a3 3 0 114.242 4.242L14.121 14.12',
+  hand: 'M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11',
+  brain: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z',
+};
+---
+
+<section class="container-page py-20">
+  <h2 class="font-heading text-2xl md:text-3xl font-bold tracking-tight mb-3 text-center">
+    Research Directions
+  </h2>
+  <p class="text-muted text-center mb-12 max-w-2xl mx-auto">
+    My research spans three interconnected areas at the intersection of HCI, AI, and creative design.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    {areas.map((area: any) => (
+      <a
+        href={`/publications?topic=${area.key}`}
+        class="group relative p-6 rounded-2xl border border-subtle bg-primary transition-all duration-300 hover:border-transparent hover:shadow-xl"
+        data-animate
+      >
+        <!-- Glow effect on hover -->
+        <div
+          class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"
+          style={`background: ${area.color}15;`}
+        />
+        <div
+          class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 border-2"
+          style={`border-color: ${area.color}40;`}
+        />
+
+        <!-- Icon -->
+        <div
+          class="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
+          style={`background: ${area.color}15;`}
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke={area.color}
+            stroke-width="1.5"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d={iconMap[area.icon] || iconMap.brain} />
+          </svg>
+        </div>
+
+        <!-- Content -->
+        <h3 class="font-heading font-semibold text-lg mb-2 group-hover:text-accent transition-colors">
+          {area.title}
+        </h3>
+        <p class="text-sm text-muted leading-relaxed mb-3">
+          {area.description}
+        </p>
+        <span class="text-xs font-medium text-faint">
+          {counts[area.key] || 0} publications →
+        </span>
+      </a>
+    ))}
+  </div>
+</section>

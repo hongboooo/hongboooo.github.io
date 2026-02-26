@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import profileRaw from '../data/profile.yaml';
+const profile = profileRaw as any;
+---
+
+<Layout title="About" description="About Hongbo Zhang — HCI researcher at Zhejiang University">
+  <Navbar />
+  <main class="container-page pt-28 pb-16">
+    <!-- Header -->
+    <div class="max-w-3xl">
+      <div class="flex items-start gap-6 mb-8">
+        <img
+          src={profile.avatar}
+          alt={profile.name}
+          class="w-24 h-24 rounded-2xl object-cover ring-2 ring-accent/10 flex-shrink-0"
+        />
+        <div>
+          <h1 class="font-heading text-3xl md:text-4xl font-bold tracking-tight mb-2">
+            {profile.name}
+          </h1>
+          <p class="text-lg text-muted">
+            {profile.title} · {profile.department}
+          </p>
+          <p class="text-muted">{profile.affiliation} · {profile.location}</p>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <section class="mb-12" data-animate>
+        <h2 class="font-heading text-xl font-semibold mb-4">About</h2>
+        <div class="text-muted leading-relaxed space-y-4">
+          <p>{profile.bio}</p>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-12" data-animate>
+        <h2 class="font-heading text-xl font-semibold mb-6">Education</h2>
+        <div class="relative pl-6 border-l-2 border-subtle space-y-8">
+          {profile.education.map((edu: any, i: number) => (
+            <div class="relative" data-animate>
+              <!-- Timeline dot -->
+              <div class:list={[
+                'absolute -left-[calc(0.5rem+1.5px+1px)] top-1 w-3 h-3 rounded-full border-2',
+                i === 0
+                  ? 'bg-accent border-accent animate-pulse'
+                  : 'bg-[var(--bg-primary)] border-[var(--border-color)]',
+              ]} />
+              <div class="flex items-baseline gap-3 mb-1">
+                <h3 class="font-heading font-semibold">{edu.degree}</h3>
+                <span class="text-xs text-faint font-mono">{edu.period}</span>
+              </div>
+              <p class="text-sm text-muted">{edu.institution}</p>
+              {edu.description && (
+                <p class="text-sm text-faint mt-1">{edu.description}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section data-animate>
+        <h2 class="font-heading text-xl font-semibold mb-4">Contact</h2>
+        <div class="flex flex-col gap-2 text-sm text-muted">
+          <a href={`mailto:${profile.email}`} class="hover:text-accent transition-colors">
+            {profile.email}
+          </a>
+          {profile.links.googleScholar && (
+            <a href={profile.links.googleScholar} target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+              Google Scholar
+            </a>
+          )}
+        </div>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll('[data-animate]').forEach((el) => {
+    (el as HTMLElement).style.opacity = '0';
+    observer.observe(el);
+  });
+</script>

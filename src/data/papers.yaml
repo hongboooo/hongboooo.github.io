@@ -1,0 +1,235 @@
+# ============================================
+# Publications Data
+# To add a new paper: copy an entry and modify
+# ============================================
+
+# --- Category: prototyping ---
+
+- id: tochi-hybrid
+  title: "A Hybrid Prototype Method Combining Physical Models and Generative Artificial Intelligence to Support Creativity in Conceptual Design"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Xuelong Xie" }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Zihong Zhou" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "TOCHI", full: "ACM Transactions on Computer-Human Interaction", type: "journal" }
+  year: 2024
+  category: prototyping
+  doi: "https://doi.org/10.1145/3689433"
+  pdf: "/files/tochi.pdf"
+  image: "/images/paper_img/tochi.png"
+  abstract: "We propose a hybrid prototype method that combines physical models with generative AI to support creativity in the early conceptual design phase."
+  status: published
+  featured: true
+  tags: ["generative-ai", "prototyping", "conceptual-design"]
+
+- id: uist-protodreamer
+  title: "ProtoDreamer: A Mixed-prototype Tool Combining Physical Model and Generative AI to Support Conceptual Design"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Xuelong Xie" }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Zihong Zhou" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "UIST", full: "ACM Symposium on User Interface Software and Technology", type: "conference" }
+  year: 2024
+  category: prototyping
+  doi: "https://doi.org/10.1145/3654777.3676399"
+  pdf: "/files/uist.pdf"
+  image: "/images/paper_img/uist.png"
+  abstract: "ProtoDreamer is a mixed-prototype tool that enables designers to combine physical models with generative AI for rapid conceptual design exploration."
+  status: published
+  featured: true
+  tags: ["generative-ai", "prototyping", "mixed-reality"]
+
+- id: chi-ieds
+  title: "IEDS: Exploring an Intelli-Embodied Design Space Combining Designer, AR, and GAI to Support Conceptual Design"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Jingwen Yang" }
+    - { name: "Yifei Wu" }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Xuelong Xie" }
+    - { name: "Wutao You" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "CHI", full: "ACM CHI Conference on Human Factors in Computing Systems", type: "conference" }
+  year: 2025
+  category: prototyping
+  doi: "https://doi.org/10.1145/3706598.3713528"
+  pdf: "/files/IEDS.pdf"
+  image: "/images/paper_img/ieds.png"
+  abstract: "Conceptual design is an important stage in industrial product development, influenced by the design space and materials available to designers. Advancements in human-computer interaction (HCI) and artificial intelligence (AI) technologies have broadened these aspects considerably. On the one hand, augmented reality (AR) technologies merge physical and virtual representations to enhance intuitive interaction and embodied cognition. On the other hand, generative artificial intelligence (GAI) serves as a novel design material, boosting creativity and productivity. Inspired by these technological strides, we proposed an Intelli-Embodied Design Space (IEDS), which integrates designers, AR, and GAI to support industrial conceptual design by combining embodied interaction with generative variability. Within IEDS, designers can interact with the physical prototypes intuitively, while GAI refines these into virtual forms that can be embedded in the physical world through AR technology. In this study, we established the theoretical framework and interaction modes of IEDS through literature reviews and expert interviews. Subsequently, we designed and implemented three GAI+AR tools, GAI + Head-mounted Display (HMD), GAI + Handheld Display (HHD), and GAI + Spatial Augmented Reality (SAR), based on three AR approaches in IEDS to practically examine the benefits and challenges of these interaction modes across industrial conceptual design tasks. We discussed IEDS's influence on industrial conceptual design and released its application guidelines to the HCI community."
+  status: published
+  featured: true
+  tags: ["augmented-reality", "generative-ai", "embodied-interaction"]
+
+- id: chi-fusionprotor
+  title: "FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual Transition and Simulation"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Xuelong Xie" }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Yifei Wu" }
+    - { name: "Zejian Li" }
+    - { name: "Xiaoyu Chen" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "CHI", full: "ACM CHI Conference on Human Factors in Computing Systems", type: "conference" }
+  year: 2025
+  category: prototyping
+  doi: "https://doi.org/10.1145/3706598.3713686"
+  pdf: "/files/fusion.pdf"
+  image: "/images/paper_img/fusionprotor.png"
+  abstract: "FusionProtor enables component-level physical-to-virtual transition and simulation, bridging the gap between physical prototypes and digital simulation."
+  status: published
+  featured: true
+  tags: ["prototyping", "mixed-reality", "simulation"]
+
+- id: cscw-mr-codesign
+  title: "Exploring the Role of Mixed Reality on Design Representations to Enhance User-involved Co-design Communication"
+  authors:
+    - { name: "Pei Chen" }
+    - { name: "Kexing Wang" }
+    - { name: "Lianyan Liu" }
+    - { name: "Xuanhui Liu" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Zhuyu Teng" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "CSCW", full: "ACM Conference on Computer-Supported Cooperative Work and Social Computing", type: "conference" }
+  year: 2025
+  category: prototyping
+  doi: "https://dl.acm.org/doi/10.1145/3710979"
+  pdf: "/files/cscw.pdf"
+  image: "/images/paper_img/cscw.png"
+  abstract: "We explore how mixed reality can enhance design representations to support user-involved co-design communication."
+  status: published
+  featured: true
+  tags: ["mixed-reality", "co-design", "communication"]
+
+# --- Category: interaction ---
+
+- id: ijhcs-hand
+  title: "Elicitation and Evaluation of Hand-based Interaction Language for 3D Conceptual Design in Mixed Reality"
+  authors:
+    - { name: "Lingyun Sun" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Xuelong Xie" }
+    - { name: "Zihong Zhou" }
+    - { name: "Xuanhui Liu" }
+    - { name: "Xiaoyu Chen" }
+  venue: { short: "IJHCS", full: "International Journal of Human-Computer Studies", type: "journal" }
+  year: 2023
+  category: interaction
+  doi: "https://doi.org/10.1016/j.ijhcs.2023.103198"
+  pdf: "/files/ijhcs.pdf"
+  image: "/images/paper_img/ijhcs.png"
+  abstract: "We elicit and evaluate a hand-based interaction language for 3D conceptual design tasks in mixed reality environments."
+  status: published
+  featured: true
+  tags: ["hand-interaction", "mixed-reality", "3d-design"]
+
+- id: ijhci-tablet
+  title: "The Effect of Tablet Computer Configurations and Touchscreen Gestures on Human Biomechanics, Performance, and Subjective Assessment"
+  authors:
+    - { name: "Jinghua Huang" }
+    - { name: "Hongbo Zhang", me: true, role: "corresponding" }
+    - { name: "Lujin Mao" }
+    - { name: "Dongliang Zhang" }
+    - { name: "Jianfeng Li" }
+    - { name: "Tiancheng Ji" }
+    - { name: "Runze Han" }
+  venue: { short: "IJHCI", full: "International Journal of Human-Computer Interaction", type: "journal" }
+  year: 2022
+  category: interaction
+  doi: "https://doi.org/10.1080/10447318.2022.2111051"
+  pdf: "/files/ijhci.pdf"
+  image: "/images/paper_img/ijhci.png"
+  abstract: "We examine the effects of tablet configurations and touchscreen gestures on human biomechanics, performance, and subjective assessment."
+  status: published
+  tags: ["touchscreen", "gestures", "ergonomics"]
+
+- id: displays-painting
+  title: "Painting++: Human-Computer Collaborative Painting in VR with Multisensory Interaction"
+  authors:
+    - { name: "Zhuoshu Li" }
+    - { name: "Pei Chen" }
+    - { name: "Hongbo Zhang", me: true, role: "corresponding" }
+    - { name: "Yexinrui Wu" }
+    - { name: "Xuanhui Liu" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "Displays", full: "Displays", type: "journal" }
+  year: 2025
+  category: interaction
+  image: "/images/paper_img/painting.png"
+  pdf: "/files/display.pdf"
+  abstract: "Painting++ enables human-computer collaborative painting in VR through multisensory interaction combining visual, haptic, and auditory feedback."
+  status: under-review
+  featured: true
+  tags: ["virtual-reality", "painting", "multisensory"]
+
+# --- Category: cognition ---
+
+- id: tsc-stimulus
+  title: "Modality and Fidelity: Understanding How Creative Stimulus Combinations Impact Design Outcomes and Process Across Different Conceptual Design Phases"
+  authors:
+    - { name: "Pei Chen" }
+    - { name: "Zhuoshu Li" }
+    - { name: "Yexinrui Wu" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Jiaxuan Zhou" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "TS&C", full: "Thinking Skills and Creativity", type: "journal" }
+  year: 2024
+  category: cognition
+  doi: "https://doi.org/10.1016/j.tsc.2024.101552"
+  pdf: "/files/tsc.pdf"
+  image: "/images/paper_img/tsc.png"
+  abstract: "We investigate how different combinations of creative stimulus modalities and fidelities impact design outcomes across conceptual design phases."
+  status: published
+  tags: ["creativity", "design-cognition", "stimulus"]
+
+- id: iui-awareness
+  title: "An Exploratory Study on How AI Awareness Impacts Human-AI Design Collaboration"
+  authors:
+    - { name: "Zhuoyi Cheng" }
+    - { name: "Pei Chen", role: "corresponding" }
+    - { name: "Wenzheng Song" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Lingyun Sun" }
+  venue: { short: "IUI", full: "ACM Conference on Intelligent User Interfaces", type: "conference" }
+  year: 2024
+  category: cognition
+  doi: "https://doi.org/10.1145/3640543.3645164"
+  pdf: "/files/iui.pdf"
+  image: "/images/paper_img/iui.png"
+  abstract: "We explore how AI awareness influences human-AI collaboration dynamics in design tasks."
+  status: published
+  featured: true
+  tags: ["human-ai-collaboration", "awareness", "design"]
+
+- id: ijhci-gpsdesign
+  title: "GPSdesign: Integrating Generative AI with Problem-Solution Co-Evolution Network to Support Product Conceptual Design"
+  authors:
+    - { name: "Pei Chen" }
+    - { name: "Yexinrui Wu" }
+    - { name: "Zhuoshu Li" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Mingxu Zhou" }
+    - { name: "Jiayi Yao" }
+    - { name: "Weitao You" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "IJHCI", full: "International Journal of Human-Computer Interaction", type: "journal" }
+  year: 2025
+  category: cognition
+  doi: "https://doi.org/10.1080/10447318.2025.2453003"
+  pdf: "/files/GPSdesign.pdf"
+  image: "/images/paper_img/gps.png"
+  abstract: "GPSdesign integrates generative AI with a problem-solution co-evolution network to support structured product conceptual design."
+  status: published
+  tags: ["generative-ai", "co-evolution", "conceptual-design"]
