@@ -6,7 +6,6 @@ _site/
 node_modules/
 
 # Lock files
-package-lock.json
 Gemfile.lock
 
 # Astro
