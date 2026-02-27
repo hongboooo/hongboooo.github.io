@@ -1,27 +1,39 @@
 name: "Hongbo Zhang"
 nameZh: "张宏博"
-title: "PhD Candidate"
-affiliation: "Zhejiang University"
-department: "College of Computer Science"
+title: "Researcher"
+affiliation: "Zhejiang University · China & University of Tokyo · Japan"
+department: "Human Computer Interaction"
 location: "Hangzhou, China"
 email: "hongbozhang@zju.edu.cn"
 avatar: "/images/profile_400x400.webp"
 tagline: "Designing Intuitive Human-AI Creative Systems"
-bio: |
-  I am a PhD Candidate in the College of Computer Science at Zhejiang University,
-  advised by Prof. Lingyun Sun. My research focuses on Human-Computer Interaction (HCI),
-  specifically on intelligent and generative systems, XR + AI, and human-AI collaboration
-  for creative design.
+bio:
+  intro: |
+    I am a Researcher in the College of Computer Science and Technology at Zhejiang University,
+    working with [Prof. Lingyun Sun](https://person.zju.edu.cn/en/lingyun). Concurrently, I am a
+    Visiting Researcher at the School of Information Science and Technology, The University of Tokyo,
+    where I collaborate with [Prof. Takeo Igarashi](https://www-ui.is.s.u-tokyo.ac.jp/~takeo/).
+  background: |
+    I received my Ph.D. degree from the College of Computer Science and Technology at Zhejiang
+    University in 2025. My research interests lie at the intersection of Human-Computer Interaction
+    (HCI) and Artificial Intelligence, with a specific focus on:
+  interests:
+    - "Intelligent and Generative Systems"
+    - "XR + AI (Extended Reality)"
+    - "Human-AI Collaboration for Creative Design"
+  goal: |
+    My goal is to develop intuitive and collaborative systems that empower human creativity and
+    reshape the future of design through intelligent technology.
 advisor:
   name: "Prof. Lingyun Sun"
-  url: ""
+  url: "https://person.zju.edu.cn/en/lingyun"
 keywords:
   - "Human-Computer Interaction"
   - "Generative AI"
   - "Mixed Reality"
   - "Creative Systems"
 links:
-  googleScholar: "https://scholar.google.com/citations?user=zzW8d-wAAAAJ&hl=en&oi=ao"
+  googleScholar: "https://scholar.google.com/citations?user=8JuFFgsAAAAJ&hl=zh-CN"
   github: ""
   twitter: ""
   linkedin: ""
@@ -30,7 +42,7 @@ portfolio: "/files/ZHANG Hongbo_PROFOILO.pdf"
 education:
   - degree: "Ph.D. in Computer Science"
     institution: "Zhejiang University"
-    period: "2022 - Present"
+    period: "2022 - 2025"
     description: "Advised by Prof. Lingyun Sun. Research in HCI, generative AI systems, and XR."
   - degree: "B.Eng. in Industrial Design"
     institution: "Zhejiang University"

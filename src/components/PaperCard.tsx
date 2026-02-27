@@ -156,11 +156,6 @@ export default function PaperCard({ paper }: PaperCardProps) {
                 {'\u{1F3C6}'} {paper.award}
               </span>
             )}
-            {paper.status === 'under-review' && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
-                Under Review
-              </span>
-            )}
             {!expanded && (
               <span className="text-xs text-faint hidden lg:inline truncate max-w-md">
                 — {paper.venue.full}

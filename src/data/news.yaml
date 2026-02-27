@@ -3,22 +3,30 @@
 # Add new entries at the top (newest first)
 # ============================================
 
-- date: "2025-03"
-  content: "Two papers accepted at **CHI 2025** — IEDS and FusionProtor!"
+- date: "2026 · Jan"
+  content: "Thrilled to share that my first-author paper **ImmersiProtor** has been accepted at **CHI 2026**!"
   type: paper
 
-- date: "2025-02"
-  content: "Paper on MR co-design communication accepted at **CSCW 2025**."
-  type: paper
+- date: "2025 · Jul"
+  content: "Honored to receive the **Outstanding Doctoral Dissertation Award** from the China Computer Federation (CCF) Technical Committee on Human-Computer Interaction."
+  type: award
 
-- date: "2024-10"
-  content: "ProtoDreamer presented at **UIST 2024** in Pittsburgh."
+- date: "2025 · Apr"
+  content: "Presented **IEDS** and **FusionProtor** at **CHI 2025** in Yokohama, Japan. Great conversations and a wonderful community!"
   type: talk
 
-- date: "2024-08"
-  content: "Paper on hybrid prototyping published in **ACM TOCHI**."
+- date: "2025 · Feb"
+  content: "A co-authored paper on MR co-design communication has been accepted at **CSCW 2025**."
   type: paper
 
-- date: "2024-06"
-  content: "GPSdesign accepted at **IJHCI 2025**."
+- date: "2025 · Jan"
+  content: "Excited to announce two first-author paper acceptances at **CHI 2025** — IEDS and FusionProtor!"
+  type: paper
+
+- date: "2024 · Nov"
+  content: "Presented **ProtoDreamer** at **UIST 2024** in Pittsburgh, USA."
+  type: talk
+
+- date: "2024 · Aug"
+  content: "My first-author paper on hybrid prototyping is now published in **ACM TOCHI**."
   type: paper

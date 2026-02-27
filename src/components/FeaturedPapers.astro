@@ -17,7 +17,6 @@ const venueColorMap: Record<string, string> = {
       <h2 class="font-heading text-2xl md:text-3xl font-bold tracking-tight">
         Selected Publications
       </h2>
-      <p class="text-muted text-sm mt-1">{featured.length} highlighted works — scroll to explore</p>
     </div>
     <div class="flex items-center gap-3">
       <!-- Nav arrows -->
@@ -84,16 +83,10 @@ const venueColorMap: Record<string, string> = {
             {paper.award && (
               <span class="text-xs">{'\u{1F3C6}'}</span>
             )}
-            {paper.status === 'under-review' && (
-              <span class="text-xs px-1.5 py-0.5 rounded bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400 font-medium">In Progress</span>
-            )}
           </div>
-          <h3 class="font-heading font-semibold text-[15px] leading-snug group-hover:text-accent transition-colors duration-300 line-clamp-2">
+          <h3 class="carousel-title font-heading font-semibold text-[15px] leading-snug group-hover:text-accent transition-colors duration-300">
             {paper.title}
           </h3>
-          {paper.abstract && (
-            <p class="text-xs text-muted leading-relaxed line-clamp-2">{paper.abstract}</p>
-          )}
         </div>
       </a>
     ))}
@@ -113,6 +106,16 @@ const venueColorMap: Record<string, string> = {
   }
   #carousel-track {
     scroll-snap-type: x mandatory;
+  }
+  .carousel-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .carousel-card:hover .carousel-title {
+    -webkit-line-clamp: unset;
+    display: block;
   }
 </style>
 

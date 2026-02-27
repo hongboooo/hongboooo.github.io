@@ -29,7 +29,7 @@ export default function PublicationList({ papers, categories }: PublicationListP
   }, [papers]);
 
   const awardCount = useMemo(() => papers.filter((p) => p.award).length, [papers]);
-  const underReviewCount = useMemo(() => papers.filter((p) => p.status === 'under-review').length, [papers]);
+  const firstAuthorCount = useMemo(() => papers.filter((p) => p.authors.some((a) => a.me && a.role === 'first')).length, [papers]);
 
   // Filter papers
   const filtered = useMemo(() => {
@@ -39,8 +39,8 @@ export default function PublicationList({ papers, categories }: PublicationListP
     }
     if (activeType === 'awarded') {
       result = result.filter((p) => p.award);
-    } else if (activeType === 'under-review') {
-      result = result.filter((p) => p.status === 'under-review');
+    } else if (activeType === 'first-author') {
+      result = result.filter((p) => p.authors.some((a) => a.me && a.role === 'first'));
     }
     return result;
   }, [papers, activeCategory, activeType]);
@@ -71,7 +71,7 @@ export default function PublicationList({ papers, categories }: PublicationListP
           Publications
         </h1>
         <p className="text-muted text-lg">
-          {papers.length} papers published at {venues}, and more.
+          My scholarly work has been published in premier HCI venues, including TOCHI, IJHCS, CHI, UIST, and CSCW.
         </p>
       </div>
 
@@ -84,7 +84,7 @@ export default function PublicationList({ papers, categories }: PublicationListP
         onTypeChange={setActiveType}
         paperCounts={paperCounts}
         awardCount={awardCount}
-        underReviewCount={underReviewCount}
+        firstAuthorCount={firstAuthorCount}
       />
 
       {/* Paper list grouped by year */}

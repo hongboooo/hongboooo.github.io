@@ -8,13 +8,13 @@ interface FilterBarProps {
   onTypeChange: (type: string) => void;
   paperCounts: Record<string, number>;
   awardCount: number;
-  underReviewCount: number;
+  firstAuthorCount: number;
 }
 
 const typeFilters = [
   { key: 'all', label: 'All' },
+  { key: 'first-author', label: 'First Author' },
   { key: 'awarded', label: 'Awarded \u{1F3C6}' },
-  { key: 'under-review', label: 'In Progress' },
 ];
 
 export default function FilterBar({
@@ -25,7 +25,7 @@ export default function FilterBar({
   onTypeChange,
   paperCounts,
   awardCount,
-  underReviewCount,
+  firstAuthorCount,
 }: FilterBarProps) {
   const allCategories = [
     { key: 'all', title: 'All', color: '#3D78F5' },
@@ -77,7 +77,7 @@ export default function FilterBar({
           let count = 0;
           if (type.key === 'all') count = Object.values(paperCounts).reduce((a, b) => a + b, 0);
           else if (type.key === 'awarded') count = awardCount;
-          else if (type.key === 'under-review') count = underReviewCount;
+          else if (type.key === 'first-author') count = firstAuthorCount;
 
           if (type.key !== 'all' && count === 0) return null;
 
@@ -92,6 +92,7 @@ export default function FilterBar({
               }}
             >
               {type.label}
+              <span className="ml-1 opacity-70">{count}</span>
             </button>
           );
         })}

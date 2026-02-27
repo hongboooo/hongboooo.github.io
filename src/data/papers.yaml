@@ -5,6 +5,47 @@
 
 # --- Category: prototyping ---
 
+- id: chi-immersiprotor
+  title: "ImmersiProtor: A Collaborative Mixed-Prototype Tool Integrating Spatial Augmented Reality and Component-layered Generation"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Yifei Wu" }
+    - { name: "Chaoyi Lin" }
+    - { name: "Weitao You" }
+    - { name: "Lingyun Sun" }
+    - { name: "Pei Chen", role: "corresponding" }
+  venue: { short: "CHI", full: "ACM CHI Conference on Human Factors in Computing Systems", type: "conference" }
+  year: 2026
+  category: prototyping
+  doi: "https://doi.org/10.1145/3772318.3790763"
+  pdf: "/files/immersiprotor.pdf"
+  image: "/images/paper_img/chi26.png"
+  abstract: "Conceptual design is a critical stage in product development, which is a co-design process involving multidisciplinary collaboration based on prototypes. In this paper, we aim to propose a novel prototype paradigm that combines the distinct strengths of generative artificial intelligence (GAI) and spatial augmented reality (SAR), leveraging the expressive potential of SAR and the creative potential of GAI for co-design. To achieve this, we initially conducted a formative study with designers to explore how these technologies could be effectively combined to facilitate co-design. Based on our findings, we introduce ImmersiProtor, a prototype tool integrating multi-view SAR and component-layered GAI for co-design. On one hand, ImmersiProtor allows design team members to freely create and modify physical prototypes while automatically generating multi-view and high-fidelity renderings that are projected onto the surfaces of the physical prototype using SAR technology, enabling immersive communication and intuitive evaluation. On the other hand, ImmersiProtor introduces a component-layered generation and collaboration mode, offering both personal and shared team component resources. It ensures that individual team members can explore ideas independently without interference, while also supporting concept integration, evaluation, and iteration. We implemented ImmersiProtor, which involves a web-based application and an SAR design space. We conducted a user study to verify ImmersiProtor's usability in supporting prototype and collaboration. Our results highlighted ImmersiProtor's inherent strengths in enhancing intuition, promoting collaboration, and strengthening GAI controllability. We also explored the effect of mixed interaction on design and critically discuss its best practices for the HCI community."
+  status: published
+  featured: true
+  tags: ["spatial-augmented-reality", "generative-ai", "collaborative-design", "prototyping"]
+
+- id: jmd-stickynexus
+  title: "STICKYNEXUS: Leveraging Sticky Note Interactions to Improve Information Management in Artificial Intelligence-Assisted Design"
+  authors:
+    - { name: "Pei Chen" }
+    - { name: "Zhuyu Teng" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Zhaoqu Jiang" }
+    - { name: "Wenzheng Song" }
+    - { name: "Yiwen Ren" }
+    - { name: "Weitao You" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "JMD", full: "Journal of Mechanical Design", type: "journal" }
+  year: 2026
+  category: cognition
+  doi: "https://asmedigitalcollection.asme.org/mechanicaldesign/article/148/1/011401/1218723"
+  pdf: "/files/sticky.pdf"
+  image: "/images/paper_img/sticky.png"
+  abstract: "Effective information collection and management are crucial for creative design. Recently, generative artificial intelligence (GenAI) has become an essential tool for helping designers access multidisciplinary information and expand their creative space. However, the vast amount of artificial intelligence (AI)-generated information can overwhelm designers, complicating the distillation of key insights. Additionally, current conversational AI tools are inadequate in supporting nonlinear design thinking, which is critical for innovative outcomes. To address these challenges, we propose STICKYNEXUS, which supports designers in navigating and synthesizing diverse information from both global and local perspectives when collaborating with AI. STICKYNEXUS enables designers to construct comprehensive design concepts by analyzing relationships among clusters of sticky notes, and it promotes further divergence and iterative refinement based on individual sticky note insights. Our user study (N = 18) shows that STICKYNEXUS significantly enhances designers' ability to explore detailed information, unlocking new design possibilities and fostering creative exploration."
+  status: published
+  tags: ["information-management", "generative-ai", "creativity-support", "conceptual-design"]
+
 - id: tochi-hybrid
   title: "A Hybrid Prototype Method Combining Physical Models and Generative Artificial Intelligence to Support Creativity in Conceptual Design"
   authors:
@@ -20,7 +61,7 @@
   doi: "https://doi.org/10.1145/3689433"
   pdf: "/files/tochi.pdf"
   image: "/images/paper_img/tochi.png"
-  abstract: "We propose a hybrid prototype method that combines physical models with generative AI to support creativity in the early conceptual design phase."
+  abstract: "Conceptual design is an essential stage in the design process, and its ultimate success largely depends on designers' creativity. Both physical and digital prototypes are commonly adopted by designers to support ideation and creativity, providing intuitive perception and rapid iteration, respectively. In recent advancements, large-scale generation models are able to offer data-enabled creativity support by generating high-quality solutions comparable to human designers. This opens up an imaginary space for designers and brings new possibilities for design tools. In this study, we proposed a hybrid prototype method that synergistically combines physical models and generative artificial intelligence (AI) in the conceptual design stage. Correspondingly, we developed a hybrid prototype system to implement the proposed method. We conducted a comparative user study with 45 designers who completed a design task using the physical prototype method, standalone generative AI and the hybrid prototype method, respectively. Our results verified the effectiveness of the hybrid prototype method and investigated its mechanism in supporting creativity. Finally, we discussed the application value and optimisation space of the hybrid prototype method."
   status: published
   featured: true
   tags: ["generative-ai", "prototyping", "conceptual-design"]
@@ -40,10 +81,26 @@
   doi: "https://doi.org/10.1145/3654777.3676399"
   pdf: "/files/uist.pdf"
   image: "/images/paper_img/uist.png"
-  abstract: "ProtoDreamer is a mixed-prototype tool that enables designers to combine physical models with generative AI for rapid conceptual design exploration."
+  abstract: "Prototyping serves as a critical phase in the industrial conceptual design process, enabling exploration of problem space and identification of solutions. Recent advancements in large-scale generative models have enabled AI to become a co-creator in this process. However, designers often consider generative AI challenging due to the necessity to follow computer-centered interaction rules, diverging from their familiar design materials and languages. Physical prototype is a commonly used design method, offering unique benefits in prototype process, such as intuitive understanding and tangible testing. In this study, we propose ProtoDreamer, a mixed-prototype tool that synergizes generative AI with physical prototype to support conceptual design. ProtoDreamer allows designers to construct preliminary prototypes using physical materials, while AI recognizes these forms and vocal inputs to generate diverse design alternatives. This tool empowers designers to tangibly interact with prototypes, intuitively convey design intentions to AI, and continuously draw inspiration from the generated artifacts. An evaluation study confirms ProtoDreamer's utility and strengths in time efficiency, creativity support, defects exposure, and detailed thinking facilitation."
   status: published
   featured: true
   tags: ["generative-ai", "prototyping", "mixed-reality"]
+
+- id: daai-ieds-practice
+  title: "IEDS in practice: A comparative study of an intelli-embodied design space combining AR and GAI for conceptual design"
+  authors:
+    - { name: "Hongbo Zhang", me: true, role: "first" }
+    - { name: "Yifei Wu" }
+    - { name: "Pei Chen" }
+  venue: { short: "DAAI", full: "Design and Artificial Intelligence", type: "journal" }
+  year: 2025
+  category: prototyping
+  doi: "https://doi.org/10.1016/j.daai.2025.100049"
+  pdf: "/files/daai.pdf"
+  image: "/images/paper_img/daai.png"
+  abstract: "Conceptual design is an important stage in product development. In conceptual design, the design space that designers face and the design materials they utilize affect their perception and creation. The development of human-computer interaction (HCI) and artificial intelligence (AI) technologies expands the boundaries of design space and materials. On one hand, augmented reality (AR) technologies are being utilized to create a design space that merges physical and virtual representations, facilitating intuitive interaction and embodied cognition. On the other hand, generative artificial intelligence (GAI) is employed as a novel design material to enhance creativity and boost design productivity. Against this background, this study explored an Intelli-Embodied Design Space (IEDS) combining designers, AR, and GAI to support conceptual design, aiming to enhance designers' thinking by superposing embodied interaction and generative variability. In IEDS, designers can interact with physical prototypes intuitively, while GAI can refine them into virtual forms that can be embedded in the physical world through AR technology. In this paper, we developed three potential IEDS systems and conducted a comparative user study with 27 designers to evaluate them from a practical perspective. According to the qualitative and quantitative experimental results, we clarified the interactive guidelines and best practices of IEDS. We also critically discussed IEDS's influence on conceptual design and released its future vision to the HCI community."
+  status: published
+  tags: ["augmented-reality", "generative-ai", "embodied-interaction", "conceptual-design"]
 
 - id: chi-ieds
   title: "IEDS: Exploring an Intelli-Embodied Design Space Combining Designer, AR, and GAI to Support Conceptual Design"
@@ -84,7 +141,7 @@
   doi: "https://doi.org/10.1145/3706598.3713686"
   pdf: "/files/fusion.pdf"
   image: "/images/paper_img/fusionprotor.png"
-  abstract: "FusionProtor enables component-level physical-to-virtual transition and simulation, bridging the gap between physical prototypes and digital simulation."
+  abstract: "Developing and simulating 3D prototypes is crucial in product conceptual design for ideation and presentation. Traditional methods often keep physical and virtual prototypes separate, leading to a disjointed prototype workflow. In addition, acquiring high-fidelity prototypes is time-consuming and resource-intensive, distracting designers from creative exploration. Recent advancements in generative artificial intelligence (GAI) and extended reality (XR) provided new solutions for rapid prototype transition and mixed simulation. We conducted a formative study to understand current challenges in the traditional prototype process and explore how to effectively utilize GAI and XR ability in prototype. Then we introduced FusionProtor, a mixed-prototype tool for component-level 3D prototype transition and simulation. We proposed a step-by-step generation pipeline in FusionProtor, effectively transiting 3D prototypes from physical to virtual and low- to high-fidelity for rapid ideation and iteration. We also innovated a component-level 3D creation method and applied it in XR environment for the mixed-prototype presentation and interaction. We conducted technical and user experiments to verify FusionProtor's usability in supporting diverse designs. Our results verified that it achieved a seamless workflow between physical and virtual domains, enhancing efficiency and promoting ideation. We also explored the effect of mixed interaction on design and critically discussed its best practices for HCI community."
   status: published
   featured: true
   tags: ["prototyping", "mixed-reality", "simulation"]
@@ -105,9 +162,8 @@
   doi: "https://dl.acm.org/doi/10.1145/3710979"
   pdf: "/files/cscw.pdf"
   image: "/images/paper_img/cscw.png"
-  abstract: "We explore how mixed reality can enhance design representations to support user-involved co-design communication."
+  abstract: "As users transition from passive subjects to active partners in the co-design process, they bring unique insights based on their experiences, collaboratively envisioning a better future with designers. However, unlike designers who are adept at various forms of representation, most users lack advanced modeling or sketching skills to concretely present the three-dimensional (3D) forms or dynamic features of a design proposal. This hinders user expression and increases the cognitive load on designers, thereby reducing communication efficiency in the co-design process. Mixed Reality (MR) technology enables users to depict 3D information in real physical space using natural gestures. This means that MR can provide a low-learning-cost concrete expression method without compromising traditional communication methods. This study explores the role of MR in enhancing communication between designers and users during the early stages of design. A formative study was conducted to identify four key requirements, which informed the development of the DuoMR system. DuoMR supports designers and users in expressing design ideas through gesture modeling in a collaborative MR space. Results from the user study and practical case study show that DuoMR effectively reduces cognitive load and enhances mutual understanding during the co-design process."
   status: published
-  featured: true
   tags: ["mixed-reality", "co-design", "communication"]
 
 # --- Category: interaction ---
@@ -116,7 +172,7 @@
   title: "Elicitation and Evaluation of Hand-based Interaction Language for 3D Conceptual Design in Mixed Reality"
   authors:
     - { name: "Lingyun Sun" }
-    - { name: "Hongbo Zhang", me: true }
+    - { name: "Hongbo Zhang", me: true, role: "first" }
     - { name: "Pei Chen", role: "corresponding" }
     - { name: "Zhaoqu Jiang" }
     - { name: "Xuelong Xie" }
@@ -129,7 +185,7 @@
   doi: "https://doi.org/10.1016/j.ijhcs.2023.103198"
   pdf: "/files/ijhcs.pdf"
   image: "/images/paper_img/ijhcs.png"
-  abstract: "We elicit and evaluate a hand-based interaction language for 3D conceptual design tasks in mixed reality environments."
+  abstract: "Conceptual design is a fundamental stage in a design process. Traditional conceptual design tools impose limitations on the intuitive creation process of 3D objects, hindering their full potential. Applying hand-based interaction in mixed reality (MR) provides an immersive and intuitive creation mode without dimensionality transformations, facilitating conceiving ideas in 3D conceptual design. Although studies on hand-based languages have explored different gesture design methodologies and techniques from many individual perspectives, they lack holistic understanding and comprehensive suggestions for gesture application in conceptual design scenarios. This study aims to establish a set of hand-based languages that are available in cognitive, physical, and system-based aspects for 3D conceptual designs in the MR environment. A two-stage study was conducted in an MR environment, combining an elicitation design and a comprehensive evaluation experiment. Through the elicitation design, approximately 930 gesture actions, focusing on 31 targeted functionalities, were collected. By performing an evaluation experiment, a set of theoretically optimal hand-based interaction languages for 3D conceptual design was proposed, and the corresponding guidelines for hand-based interactions were clarified. Our results can further expand human-computer interactions in MR environments and inspire software builders to create novel hand-driven interaction modes or tools."
   status: published
   featured: true
   tags: ["hand-interaction", "mixed-reality", "3d-design"]
@@ -154,7 +210,7 @@
   status: published
   tags: ["touchscreen", "gestures", "ergonomics"]
 
-- id: displays-painting
+- id: daai-painting
   title: "Painting++: Human-Computer Collaborative Painting in VR with Multisensory Interaction"
   authors:
     - { name: "Zhuoshu Li" }
@@ -163,17 +219,37 @@
     - { name: "Yexinrui Wu" }
     - { name: "Xuanhui Liu" }
     - { name: "Lingyun Sun" }
-  venue: { short: "Displays", full: "Displays", type: "journal" }
+  venue: { short: "DAAI", full: "Design and Artificial Intelligence", type: "journal" }
   year: 2025
   category: interaction
+  doi: "https://doi.org/10.1016/j.daai.2025.100019"
   image: "/images/paper_img/painting.png"
   pdf: "/files/display.pdf"
-  abstract: "Painting++ enables human-computer collaborative painting in VR through multisensory interaction combining visual, haptic, and auditory feedback."
-  status: under-review
-  featured: true
+  abstract: "The rapid advancement of virtual reality (VR) painting technology offers substantial potential for artistic creation and education. However, existing VR painting tools primarily focus on visual modalities, lacking multisensory integration, real-time interactive feedback, and collaborative capabilities between human and computer. This paper presents Painting++, a VR painting system with multisensory interaction and human-computer collaborative capabilities. Painting++ enhances the VR painting experience through an integrated approach that combines visual, haptic, and auditory feedback channels. The system features a deformable brush that dynamically adjusts its shape to simulate real painting textures on the canvas, while sound effects generated during the painting process strengthen sensory immersion. Furthermore, Painting++ incorporates generative AI (Stable Diffusion) through an interactive pipeline, enabling progressive image generation during the painting process. This pipeline allows users to collaboratively create with the AI by previewing, accepting, or rejecting generated content at each step, maintaining artistic control throughout the process. A user study with 20 participants demonstrated that the multisensory enhancements and human-AI collaborative painting significantly improved the sense of immersion and creative experience compared to a baseline VR painting tool."
+  status: published
   tags: ["virtual-reality", "painting", "multisensory"]
 
 # --- Category: cognition ---
+
+- id: jed-inspilot
+  title: "Investigating intelligent generation of multimodal creative stimuli in conceptual design: strategies and implications"
+  authors:
+    - { name: "Zhuoshu Li" }
+    - { name: "Pei Chen" }
+    - { name: "Yexinrui Wu" }
+    - { name: "Jiayi Yao" }
+    - { name: "Hongbo Zhang", me: true }
+    - { name: "Xuanming Liu" }
+    - { name: "Lingyun Sun" }
+  venue: { short: "JED", full: "Journal of Engineering Design", type: "journal" }
+  year: 2025
+  category: cognition
+  doi: "https://www.tandfonline.com/action/showCitFormats?doi=10.1080/09544828.2025.2527517"
+  pdf: "/files/inves.pdf"
+  image: "/images/paper_img/inves.png"
+  abstract: "Creative stimuli are pivotal sources of inspiration in conceptual design. As large generative models develop, AI has been increasingly utilised in creativity support tools to furnish designers with high-quality stimuli. However, the effects of stimuli vary across stages, rendering the certain types of creative stimuli generated by existing tools unadaptable to the dynamically changing conceptual design process. To explore the intelligent generation of multimodal creative stimuli in conceptual design, we first proposed an intelligent generation strategy to facilitate the autonomous generation of stimuli tailored to different stages. Subsequently, we designed and developed InsPilot, a system capable of proactively generating stimuli with consideration of factors including the design stage, design ideas, and the designer's input state. Through a comparative experiment with GPT-4V (N = 12), we examined the relative effectiveness of the system in supporting design creativity and delineated the relevant implications. Specifically, the creativity support provided by AI-generated stimuli include subdividing application scenarios and enhancing empathy in Rapid Divergence; refining, concretising, and transferring ideas in In-depth Divergence; identifying issues and focussing on core functions in Convergence, etc. The finding also revealed InsPilot's and GPT-4V's distinct impact on designers' behaviour and frequency of stimuli engagement."
+  status: published
+  tags: ["creative-stimuli", "generative-ai", "creativity-support", "conceptual-design"]
 
 - id: tsc-stimulus
   title: "Modality and Fidelity: Understanding How Creative Stimulus Combinations Impact Design Outcomes and Process Across Different Conceptual Design Phases"
@@ -190,7 +266,7 @@
   doi: "https://doi.org/10.1016/j.tsc.2024.101552"
   pdf: "/files/tsc.pdf"
   image: "/images/paper_img/tsc.png"
-  abstract: "We investigate how different combinations of creative stimulus modalities and fidelities impact design outcomes across conceptual design phases."
+  abstract: "During conceptual design, creative stimuli are an external source of inspiration to support students' ideation process. Although existing research has explored the roles of creative stimuli, they rarely consider the intertwined influence brought by stimuli's multiple characteristics, and overlook variations in stimuli's effectiveness at different design phases. To fill this gap, this research conducted a 3 × 3 experiment, involving 72 design students in a three-phase design process and presenting combinations of textual and visual stimuli at distinct fidelities. We assessed different stimulus combinations' influence on creativity, and employed behavior coding and linkograph to reveal students' behavior and cognitive patterns throughout the process. The results revealed the mutual influence between the fidelity of texts and images, and students commonly needed more concrete stimuli in later design phases. Furthermore, students provided with different stimulus combinations exhibited variations in time allocation for behaviors including task analysis, idea generation, and evaluation, and they employed distinct approaches to generate new ideas. These findings highlight the necessity for design educators to dynamically provide creative stimuli based on the design phase, educational objective, and students' state."
   status: published
   tags: ["creativity", "design-cognition", "stimulus"]
 
@@ -208,9 +284,8 @@
   doi: "https://doi.org/10.1145/3640543.3645164"
   pdf: "/files/iui.pdf"
   image: "/images/paper_img/iui.png"
-  abstract: "We explore how AI awareness influences human-AI collaboration dynamics in design tasks."
+  abstract: "The collaborative design process is intrinsically complicated and dynamic, and researchers have long been exploring how to enhance efficiency in this process. As Artificial Intelligence technology evolves, it has been widely used as a design tool and exhibited the potential as a design collaborator. Nevertheless, problems concerning how designers should communicate with AI in collaborative design remain unsolved. To address this research gap, we referred to how designers communicate fluently in human-human design collaboration, and found awareness to be an important ability for facilitating communication by understanding their collaborators and current situation. However, previous research mainly studied and supported human awareness, the possible impact AI awareness would bring to the human-AI collaborative design process, and the way to realize AI awareness remain unknown. In this study, we explored how AI awareness will impact human-AI collaboration through a Wizard-of-Oz experiment. Both quantitative and qualitative results supported that enabling AI to have awareness can enhance the communication fluidity between human and AI, thus enhancing collaboration efficiency. We further discussed the results and concluded design implications for future human-AI collaborative design systems."
   status: published
-  featured: true
   tags: ["human-ai-collaboration", "awareness", "design"]
 
 - id: ijhci-gpsdesign
@@ -230,6 +305,6 @@
   doi: "https://doi.org/10.1080/10447318.2025.2453003"
   pdf: "/files/GPSdesign.pdf"
   image: "/images/paper_img/gps.png"
-  abstract: "GPSdesign integrates generative AI with a problem-solution co-evolution network to support structured product conceptual design."
+  abstract: "In conceptual design, designers often face the challenge of navigating vast design spaces to define ambiguous problems and generate feasible solutions. Recent advancements in generative artificial intelligence (GenAI) offer new opportunities to support this process. However, formative research revealed that designers struggle to simultaneously advance both problem and solution spaces when using GenAI in conceptual design, leading to increased communication load and diminished solution practicality. This study explores the integration of GenAI with the problem-solution co-evolution model to facilitate the construction of a structured design space. We propose a GenAI-supported method for expanding and evaluating the design space and developed the GPSdesign system based on this method. Compared with a baseline system, GPSdesign fosters greater design space divergence, retrospection, and structured construction, while improving design efficiency and solution quality."
   status: published
   tags: ["generative-ai", "co-evolution", "conceptual-design"]
