@@ -1,0 +1,42 @@
+<section class="container-page py-16 md:py-20" data-animate>
+  <a
+    href="/research"
+    class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4"
+    aria-label="Explore the full research vision"
+    data-protected-figure
+  >
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="font-heading text-2xl font-bold tracking-tight transition-colors group-hover:text-accent md:text-3xl">
+        Research Vision
+      </h2>
+      <span class="shrink-0 text-sm font-medium text-accent">
+        View research →
+      </span>
+    </div>
+
+    <img
+      src="/images/research/research-05.png"
+      width="3200"
+      height="1732"
+      alt="Research vision showing people and AI creating together across digital and physical environments."
+      loading="lazy"
+      decoding="async"
+      draggable="false"
+      class="pointer-events-none block h-auto w-full select-none transition-opacity duration-300 group-hover:opacity-90"
+    />
+  </a>
+</section>
+
+<style>
+  [data-protected-figure] {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-protected-figure]').forEach((figure) => {
+    figure.addEventListener('contextmenu', (event) => event.preventDefault());
+    figure.addEventListener('dragstart', (event) => event.preventDefault());
+  });
+</script>

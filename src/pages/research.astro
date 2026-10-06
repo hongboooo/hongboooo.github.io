@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import philosophyRaw from '../data/research-philosophy.yaml';
+
+type ResearchFigure = {
+  number: string;
+  section: string;
+  title: string;
+  description: string;
+  image: string;
+  width: number;
+  height: number;
+  alt: string;
+  dense: boolean;
+};
+
+const philosophy = philosophyRaw as {
+  eyebrow: string;
+  headline: string;
+  introduction: string;
+  figures: ResearchFigure[];
+};
+
+const [heroFigure, ...figures] = philosophy.figures;
+---
+
+<Layout
+  title="Research"
+  description="Hongbo Zhang's research vision for human-AI co-design across digital and physical creative environments"
+>
+  <Navbar />
+  <main class="pt-24 pb-16">
+    <!-- Page introduction and the opening research-focus figure are intentionally separate. -->
+    <section class="container-wide" data-animate>
+      <header class="mb-12 max-w-4xl">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+          {philosophy.eyebrow}
+        </p>
+        <h1 class="font-heading text-[clamp(2rem,4vw,3rem)] font-bold leading-tight tracking-tight sm:whitespace-nowrap">
+          {philosophy.headline}
+        </h1>
+        <p class="mt-6 max-w-4xl text-pretty text-base leading-7 text-muted md:text-lg md:leading-8">
+          {philosophy.introduction}
+        </p>
+      </header>
+
+      <div class="mb-5 w-full">
+        <p class="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+          {heroFigure.number} · {heroFigure.section}
+        </p>
+        <h2 class="font-heading text-[clamp(1.25rem,2.2vw,1.875rem)] font-bold leading-tight tracking-tight md:whitespace-nowrap">
+          {heroFigure.title}
+        </h2>
+      </div>
+
+      <div class="max-w-full overflow-x-auto overscroll-x-contain" data-protected-figure>
+        <div class="research-artwork block min-w-[720px] md:min-w-0">
+          <img
+            src={heroFigure.image}
+            width={heroFigure.width}
+            height={heroFigure.height}
+            alt={heroFigure.alt}
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            draggable="false"
+            class="pointer-events-none block h-auto w-full select-none"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- The remaining figures form one continuous, top-to-bottom research narrative. -->
+    <section class="container-wide mt-16 md:mt-24">
+      <p class="mb-5 text-xs text-faint md:hidden">
+        Swipe within a figure to inspect its details.
+      </p>
+
+      <div class="space-y-16 md:space-y-24">
+        {figures.map((figure) => (
+          <figure data-animate>
+            <figcaption class="mb-5">
+              <div class="w-full">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                  {figure.number} · {figure.section}
+                </p>
+                <h2 class="font-heading text-[clamp(1.25rem,2.2vw,1.875rem)] font-bold leading-tight tracking-tight md:whitespace-nowrap">
+                  {figure.title}
+                </h2>
+              </div>
+            </figcaption>
+
+            <div class="research-figure max-w-full overflow-x-auto overscroll-x-contain" data-protected-figure>
+              <div
+                class:list={[
+                  'research-artwork block md:min-w-0',
+                  figure.dense ? 'min-w-[940px]' : 'min-w-[760px]',
+                ]}
+              >
+                <img
+                  src={figure.image}
+                  width={figure.width}
+                  height={figure.height}
+                  alt={figure.alt}
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                  class="pointer-events-none block h-auto w-full select-none"
+                />
+              </div>
+            </div>
+          </figure>
+        ))}
+      </div>
+
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .research-figure {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+  }
+
+  .research-figure::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .research-figure::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .research-figure::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 999px;
+  }
+
+  .research-artwork {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-protected-figure]').forEach((figure) => {
+    figure.addEventListener('contextmenu', (event) => event.preventDefault());
+    figure.addEventListener('dragstart', (event) => event.preventDefault());
+  });
+</script>

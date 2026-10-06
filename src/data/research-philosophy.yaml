@@ -1,0 +1,57 @@
+eyebrow: "Research"
+headline: "Intelli-Embodied Design Space"
+introduction: |
+  I study how people can work with generative AI and extended reality across ideation,
+  prototyping, situated understanding, and collaborative making. I build systems that connect
+  digital and physical materials while preserving human agency, legibility, and control.
+
+figures:
+  - number: "01"
+    section: "Research Focus"
+    title: "Human–AI Co-Design"
+    description: "The core relationship that connects my research across creative practice, intelligent systems, and physical interaction."
+    image: "/images/research/research-01.png"
+    width: 3200
+    height: 932
+    alt: "Human-AI co-design represented as people and AI sharing a creative space."
+    dense: false
+
+  - number: "02"
+    section: "Generative AI Transformation"
+    title: "How Generative AI Is Reshaping Design"
+    description: "Three opportunities for AI-supported design, paired with the questions of control, continuity, and physical-world alignment they introduce."
+    image: "/images/research/research-02.png"
+    width: 3200
+    height: 1964
+    alt: "Three opportunity and challenge pairs for AI-supported design exploration, prototyping, and physical assistance."
+    dense: true
+
+  - number: "03"
+    section: "Research Framework"
+    title: "Connecting Cognition and Action across Digital and Physical Worlds"
+    description: "A framework connecting cognition and action with digital and physical interaction spaces."
+    image: "/images/research/research-03.png"
+    width: 3200
+    height: 1269
+    alt: "Conceptual framework spanning cognition to action and digital to physical interaction."
+    dense: true
+
+  - number: "04"
+    section: "Research Map"
+    title: "Four Connected Directions for Human–AI Co-Design"
+    description: "Design ideation, interactive prototyping, situated understanding, and collaborative making form one connected research program."
+    image: "/images/research/research-04.png"
+    width: 3200
+    height: 1321
+    alt: "Research map connecting four directions with representative projects and publications."
+    dense: true
+
+  - number: "05"
+    section: "Research Vision"
+    title: "Expanding What People and AI Can Create Together"
+    description: "A future in which multiple people and diverse AI agents ideate, understand, prototype, and make together across digital and physical worlds."
+    image: "/images/research/research-05.png"
+    width: 3200
+    height: 1732
+    alt: "Vision of people and AI agents creating together in a shared digital and physical environment."
+    dense: true
