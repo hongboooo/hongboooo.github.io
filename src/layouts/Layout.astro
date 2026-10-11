@@ -5,12 +5,20 @@ import ScrollProgress from '../components/ScrollProgress.tsx';
 
 interface Props {
   title: string;
+  metaTitle?: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description = "Hongbo Zhang — HCI Researcher" } = Astro.props;
-const pageTitle = `${title} | Hongbo Zhang`;
+const {
+  title,
+  metaTitle,
+  description = "Hongbo Zhang — Researcher / Designer working across Human–Computer Interaction and Intelligent Design",
+  image = '/images/profile-home-wide.png',
+} = Astro.props;
+const pageTitle = metaTitle ?? `${title} | Hongbo Zhang`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const socialImageUrl = new URL(image, Astro.site ?? Astro.url.origin);
 ---
 
 <!doctype html>
@@ -26,9 +34,16 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="2001" />
+    <meta property="og:image:height" content="786" />
+    <meta property="og:image:alt" content="Portrait of Hongbo Zhang" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content="Portrait of Hongbo Zhang" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
