@@ -18,9 +18,10 @@ export default function ThemeToggle() {
   return (
     <motion.button
       onClick={toggle}
-      className="relative p-2 rounded-lg hover:bg-[var(--bg-alt)] transition-colors"
+      className="relative p-3 md:p-2 text-muted hover:text-[var(--text-primary)] transition-colors focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-secondary)]"
       whileTap={{ scale: 0.9 }}
-      aria-label="Toggle theme"
+      aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+      aria-pressed={dark}
     >
       <AnimatePresence mode="wait">
         {dark ? (

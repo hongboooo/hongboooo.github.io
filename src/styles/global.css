@@ -4,21 +4,29 @@
 
 @layer base {
   :root {
-    --text-primary: #1d2228;
-    --text-secondary: #4b5563;
-    --text-tertiary: #9ca3af;
+    --text-primary: #202124;
+    --text-secondary: #686a6f;
+    --text-tertiary: #a1a3a7;
+    --title-color: #3b3d42;
     --bg-primary: #ffffff;
-    --bg-alt: #f8f9fb;
-    --border-color: #e5e7eb;
+    --bg-alt: #f7f7f6;
+    --border-color: #dededb;
+    --accent-rgb: 99 102 107;
+    --accent-light-rgb: 145 148 153;
+    --accent-dark-rgb: 62 64 68;
   }
 
   .dark {
     --text-primary: #e4e6ea;
     --text-secondary: #9ca3af;
     --text-tertiary: #6b7280;
+    --title-color: #d3d6dc;
     --bg-primary: #0f1419;
     --bg-alt: #1a1f26;
     --border-color: #2d333b;
+    --accent-rgb: 185 188 193;
+    --accent-light-rgb: 215 217 220;
+    --accent-dark-rgb: 151 154 160;
   }
 
   html {
@@ -33,18 +41,20 @@
   }
 
   ::selection {
-    background-color: rgba(61, 120, 245, 0.2);
-    color: #3D78F5;
+    background-color: rgba(99, 102, 107, 0.18);
+    color: var(--text-primary);
   }
 }
 
 @layer components {
   .container-page {
-    @apply max-w-6xl mx-auto px-5 md:px-8;
+    @apply w-full max-w-6xl mx-auto;
+    padding-inline: clamp(1.25rem, 3vw, 2rem);
   }
 
   .container-wide {
-    @apply max-w-7xl mx-auto px-5 md:px-8;
+    @apply w-full max-w-7xl mx-auto;
+    padding-inline: clamp(1.25rem, 3vw, 2rem);
   }
 
   .text-muted {
@@ -66,6 +76,24 @@
   .bg-primary {
     background-color: var(--bg-primary);
   }
+
+  .title-page,
+  .title-section {
+    color: var(--title-color);
+    font-family: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+  }
+
+  .title-page {
+    font-size: clamp(1.875rem, 3.2vw, 2.25rem);
+    line-height: 1.08;
+  }
+
+  .title-section {
+    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+    line-height: 1.12;
+  }
 }
 
 /* Scrollbar */
@@ -77,8 +105,17 @@
 }
 ::-webkit-scrollbar-thumb {
   background: var(--text-tertiary);
-  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    transition: none;
+  }
 }

@@ -67,7 +67,7 @@ export default function PublicationList({ papers, categories }: PublicationListP
     <div>
       {/* Header */}
       <div className="mb-8">
-        <h1 className="font-heading text-4xl md:text-5xl font-bold tracking-tight mb-3">
+        <h1 className="title-page mb-3">
           Publications
         </h1>
         <p className="text-muted text-lg">

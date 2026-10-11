@@ -1,29 +1,50 @@
-<section class="container-page py-16 md:py-20" data-animate>
+<section class="container-page w-full py-16 md:py-20" data-animate>
   <a
     href="/research"
-    class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4"
+    class="group block focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-[var(--text-secondary)]"
     aria-label="Explore the full research vision"
     data-protected-figure
   >
     <div class="mb-8 flex items-center justify-between gap-4">
-      <h2 class="font-heading text-2xl font-bold tracking-tight transition-colors group-hover:text-accent md:text-3xl">
+      <h2 class="title-section relative w-fit after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-[var(--text-secondary)] after:transition-transform after:duration-300 group-hover:after:scale-x-100">
         Research Vision
       </h2>
-      <span class="shrink-0 text-sm font-medium text-accent">
+      <span class="shrink-0 text-sm font-medium text-muted transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[var(--text-primary)]">
         View research →
       </span>
     </div>
 
-    <img
-      src="/images/research/research-05.png"
-      width="3200"
-      height="1732"
-      alt="Research vision showing people and AI creating together across digital and physical environments."
-      loading="lazy"
-      decoding="async"
-      draggable="false"
-      class="pointer-events-none block h-auto w-full select-none transition-opacity duration-300 group-hover:opacity-90"
-    />
+    <div
+      class="vision-magnifier"
+      data-vision-magnifier
+      data-cursor="pointer"
+    >
+      <div class="vision-stack">
+        <img
+          src="/images/research/research-vision-artwork.png"
+          width="6438"
+          height="3485"
+          alt="Research vision showing people and AI creating together across digital and physical environments."
+          loading="lazy"
+          decoding="async"
+          draggable="false"
+          class="vision-artwork"
+        />
+        <img
+          src="/images/research/research-vision-copy.png"
+          width="4292"
+          height="2324"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          draggable="false"
+          class="vision-copy"
+        />
+      </div>
+
+      <div class="vision-lens" data-vision-lens aria-hidden="true"></div>
+    </div>
   </a>
 </section>
 
@@ -32,11 +53,153 @@
     -webkit-touch-callout: none;
     user-select: none;
   }
+
+  .vision-magnifier {
+    --lens-x: 50%;
+    --lens-y: 50%;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .vision-stack {
+    position: relative;
+    width: 100%;
+  }
+
+  .vision-artwork,
+  .vision-copy {
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    user-select: none;
+  }
+
+  .vision-artwork {
+    height: auto;
+  }
+
+  .vision-copy {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  :global(.dark) .vision-copy {
+    filter: invert(1) hue-rotate(180deg) brightness(1.18) contrast(0.96);
+  }
+
+  .vision-lens {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: clamp(8.5rem, 14vw, 11rem);
+    aspect-ratio: 1;
+    border: 1px solid color-mix(in srgb, var(--text-primary) 58%, transparent);
+    border-radius: 50%;
+    background-color: var(--bg-primary);
+    background-image: url('/images/research/research-vision-artwork.png');
+    background-repeat: no-repeat;
+    box-shadow:
+      0 18px 42px rgba(24, 25, 27, 0.12),
+      inset 0 0 0 1px color-mix(in srgb, var(--bg-primary) 72%, transparent);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate3d(var(--lens-x), var(--lens-y), 0) translate(-50%, -50%) scale(0.88);
+    transition:
+      opacity 160ms ease,
+      transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, background-position;
+  }
+
+  .vision-lens::after {
+    content: '';
+    position: absolute;
+    right: -1.15rem;
+    bottom: 0.55rem;
+    width: 1.5rem;
+    height: 1px;
+    background: color-mix(in srgb, var(--text-primary) 58%, transparent);
+    transform: rotate(45deg);
+    transform-origin: left center;
+  }
+
+  .vision-magnifier.is-magnifying .vision-lens {
+    opacity: 1;
+    transform: translate3d(var(--lens-x), var(--lens-y), 0) translate(-50%, -50%) scale(1);
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    .vision-lens {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-protected-figure] span,
+    [data-protected-figure] h2::after,
+    .vision-lens {
+      transition: none;
+    }
+  }
 </style>
 
 <script>
-  document.querySelectorAll('[data-protected-figure]').forEach((figure) => {
+  document.querySelectorAll<HTMLElement>('[data-protected-figure]').forEach((figure) => {
     figure.addEventListener('contextmenu', (event) => event.preventDefault());
     figure.addEventListener('dragstart', (event) => event.preventDefault());
+  });
+
+  document.querySelectorAll<HTMLElement>('[data-vision-magnifier]').forEach((figure) => {
+    const lens = figure.querySelector<HTMLElement>('[data-vision-lens]');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    if (!lens) return;
+
+    const zoom = 2;
+    let frame = 0;
+    let pointerX = 0;
+    let pointerY = 0;
+
+    const renderLens = () => {
+      frame = 0;
+      const bounds = figure.getBoundingClientRect();
+      const x = Math.max(0, Math.min(bounds.width, pointerX - bounds.left));
+      const y = Math.max(0, Math.min(bounds.height, pointerY - bounds.top));
+      const lensSize = lens.getBoundingClientRect().width;
+
+      figure.style.setProperty('--lens-x', `${x}px`);
+      figure.style.setProperty('--lens-y', `${y}px`);
+      lens.style.backgroundSize = `${bounds.width * zoom}px ${bounds.height * zoom}px`;
+      lens.style.backgroundPosition = `${lensSize / 2 - x * zoom}px ${lensSize / 2 - y * zoom}px`;
+    };
+
+    const queueLens = (event: PointerEvent) => {
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      if (!frame) frame = window.requestAnimationFrame(renderLens);
+    };
+
+    figure.addEventListener('pointerenter', (event) => {
+      if (!finePointer.matches) return;
+      queueLens(event);
+      figure.classList.add('is-magnifying');
+    });
+
+    figure.addEventListener('pointermove', (event) => {
+      if (!finePointer.matches) return;
+      queueLens(event);
+    }, { passive: true });
+
+    figure.addEventListener('pointerleave', () => {
+      figure.classList.remove('is-magnifying');
+    });
+
+    finePointer.addEventListener('change', () => {
+      if (!finePointer.matches) figure.classList.remove('is-magnifying');
+    });
+
+    window.addEventListener('pagehide', () => window.cancelAnimationFrame(frame), { once: true });
   });
 </script>

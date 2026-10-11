@@ -10,9 +10,9 @@ export default {
       },
       colors: {
         accent: {
-          DEFAULT: '#3D78F5',
-          light: '#6B9AFF',
-          dark: '#2B5FD9',
+          DEFAULT: 'rgb(var(--accent-rgb) / <alpha-value>)',
+          light: 'rgb(var(--accent-light-rgb) / <alpha-value>)',
+          dark: 'rgb(var(--accent-dark-rgb) / <alpha-value>)',
         },
         surface: {
           light: '#ffffff',

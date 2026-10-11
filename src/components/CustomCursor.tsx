@@ -1,112 +1,155 @@
-import { useEffect, useState } from 'react';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
+
+type CursorMode = 'default' | 'interactive' | 'drag';
 
 export default function CustomCursor() {
+  const [enabled, setEnabled] = useState(false);
   const [visible, setVisible] = useState(false);
-  const [hovering, setHovering] = useState(false);
+  const [pressed, setPressed] = useState(false);
+  const [mode, setMode] = useState<CursorMode>('default');
+  const modeRef = useRef<CursorMode>('default');
+
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  const springX = useSpring(cursorX, { stiffness: 300, damping: 28 });
-  const springY = useSpring(cursorY, { stiffness: 300, damping: 28 });
+  const ringX = useSpring(cursorX, { stiffness: 420, damping: 34, mass: 0.35 });
+  const ringY = useSpring(cursorY, { stiffness: 420, damping: 34, mass: 0.35 });
 
   useEffect(() => {
-    // Don't show on touch devices
-    if (window.matchMedia('(pointer: coarse)').matches) return;
+    const finePointer = window.matchMedia('(pointer: fine)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    const move = (e: MouseEvent) => {
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
-      if (!visible) setVisible(true);
-    };
+    const syncAvailability = () => {
+      const shouldEnable = finePointer.matches && !reducedMotion.matches;
+      setEnabled(shouldEnable);
+      document.documentElement.classList.toggle('has-custom-cursor', shouldEnable);
 
-    const handleOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (
-        target.closest('a') ||
-        target.closest('button') ||
-        target.closest('[role="button"]') ||
-        target.closest('[data-cursor="pointer"]')
-      ) {
-        setHovering(true);
+      if (!shouldEnable) {
+        setVisible(false);
+        setPressed(false);
       }
     };
 
-    const handleOut = () => setHovering(false);
-    const handleLeave = () => setVisible(false);
-    const handleEnter = () => setVisible(true);
-
-    document.addEventListener('mousemove', move);
-    document.addEventListener('mouseover', handleOver);
-    document.addEventListener('mouseout', handleOut);
-    document.addEventListener('mouseleave', handleLeave);
-    document.addEventListener('mouseenter', handleEnter);
+    syncAvailability();
+    finePointer.addEventListener('change', syncAvailability);
+    reducedMotion.addEventListener('change', syncAvailability);
 
     return () => {
-      document.removeEventListener('mousemove', move);
-      document.removeEventListener('mouseover', handleOver);
-      document.removeEventListener('mouseout', handleOut);
-      document.removeEventListener('mouseleave', handleLeave);
-      document.removeEventListener('mouseenter', handleEnter);
+      finePointer.removeEventListener('change', syncAvailability);
+      reducedMotion.removeEventListener('change', syncAvailability);
+      document.documentElement.classList.remove('has-custom-cursor');
     };
-  }, [visible]);
+  }, []);
 
-  if (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches) {
-    return null;
-  }
+  useEffect(() => {
+    if (!enabled) return;
+
+    const updateMode = (target: EventTarget | null) => {
+      const element = target instanceof Element ? target : null;
+      const nextMode: CursorMode = element?.closest('[data-cursor="drag"]')
+        ? 'drag'
+        : element?.closest('a, button, [role="button"], [data-cursor="pointer"]')
+          ? 'interactive'
+          : 'default';
+
+      if (modeRef.current !== nextMode) {
+        modeRef.current = nextMode;
+        setMode(nextMode);
+      }
+    };
+
+    const handleMove = (event: PointerEvent) => {
+      cursorX.set(event.clientX);
+      cursorY.set(event.clientY);
+      updateMode(event.target);
+      setVisible(true);
+    };
+    const handleDown = () => setPressed(true);
+    const handleUp = () => setPressed(false);
+    const handleLeave = () => {
+      setVisible(false);
+      setPressed(false);
+    };
+
+    window.addEventListener('pointermove', handleMove, { passive: true });
+    window.addEventListener('pointerdown', handleDown, { passive: true });
+    window.addEventListener('pointerup', handleUp, { passive: true });
+    window.addEventListener('pointercancel', handleUp, { passive: true });
+    document.documentElement.addEventListener('mouseleave', handleLeave);
+
+    return () => {
+      window.removeEventListener('pointermove', handleMove);
+      window.removeEventListener('pointerdown', handleDown);
+      window.removeEventListener('pointerup', handleUp);
+      window.removeEventListener('pointercancel', handleUp);
+      document.documentElement.removeEventListener('mouseleave', handleLeave);
+    };
+  }, [cursorX, cursorY, enabled]);
+
+  if (!enabled) return null;
+
+  const ringSize = mode === 'drag' ? 48 : mode === 'interactive' ? 34 : 20;
 
   return (
     <>
-      {/* Glow ring */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] mix-blend-normal"
+        aria-hidden="true"
+        className="pointer-events-none fixed left-0 top-0 z-[9998]"
         style={{
-          x: springX,
-          y: springY,
+          x: ringX,
+          y: ringY,
           translateX: '-50%',
           translateY: '-50%',
         }}
       >
         <motion.div
+          className="relative rounded-full border border-[var(--text-secondary)]"
           animate={{
-            width: hovering ? 48 : 24,
-            height: hovering ? 48 : 24,
-            opacity: visible ? 1 : 0,
+            width: ringSize,
+            height: ringSize,
+            opacity: visible ? (mode === 'default' ? 0.52 : 0.82) : 0,
+            scale: pressed ? 0.72 : 1,
           }}
-          transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-          className="rounded-full border-2 border-accent/40"
-          style={{
-            background: hovering
-              ? 'radial-gradient(circle, rgba(61,120,245,0.12) 0%, transparent 70%)'
-              : 'radial-gradient(circle, rgba(61,120,245,0.08) 0%, transparent 70%)',
-          }}
-        />
+          transition={{ type: 'spring', stiffness: 440, damping: 30, mass: 0.32 }}
+        >
+          <AnimatePresence>
+            {mode === 'drag' && visible && (
+              <motion.span
+                className="absolute left-1/2 top-full mt-1.5 -translate-x-1/2 whitespace-nowrap font-mono text-[7px] font-medium tracking-[0.18em] text-[var(--text-secondary)]"
+                initial={{ opacity: 0, y: -2 }}
+                animate={{ opacity: 0.9, y: 0 }}
+                exit={{ opacity: 0, y: -2 }}
+                transition={{ duration: 0.14 }}
+              >
+                DRAG
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </motion.div>
       </motion.div>
 
-      {/* Dot */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999]"
+        aria-hidden="true"
+        className="pointer-events-none fixed left-0 top-0 z-[9999] h-[3px] w-[3px] rounded-full bg-[var(--text-primary)]"
         style={{
           x: cursorX,
           y: cursorY,
           translateX: '-50%',
           translateY: '-50%',
         }}
-      >
-        <motion.div
-          animate={{
-            width: hovering ? 6 : 4,
-            height: hovering ? 6 : 4,
-            opacity: visible ? 1 : 0,
-          }}
-          transition={{ duration: 0.15 }}
-          className="rounded-full bg-accent"
-        />
-      </motion.div>
+        animate={{
+          opacity: visible ? 0.9 : 0,
+          scale: pressed ? 0.55 : 1,
+        }}
+        transition={{ duration: 0.12 }}
+      />
 
-      {/* Hide default cursor globally */}
       <style>{`
-        @media (pointer: fine) {
-          * { cursor: none !important; }
+        @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+          html.has-custom-cursor,
+          html.has-custom-cursor * {
+            cursor: none !important;
+          }
         }
       `}</style>
     </>

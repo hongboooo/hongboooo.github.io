@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import type { Paper } from '../types/paper';
 
 interface PaperCardProps {
@@ -8,20 +8,17 @@ interface PaperCardProps {
 
 export default function PaperCard({ paper }: PaperCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const reduceMotion = useReducedMotion();
   const thumbRef = useRef<HTMLDivElement>(null);
   const imgLayoutId = `paper-img-${paper.id}`;
-
-  const venueColor = {
-    conference: '#3D78F5',
-    journal: '#10B981',
-    workshop: '#F59E0B',
-  }[paper.venue.type] || '#3D78F5';
+  const detailsId = `paper-details-${paper.id}`;
 
   // Zoom lens — direct DOM manipulation for zero React re-renders
   const handleEnter = useCallback(() => {
+    if (reduceMotion) return;
     const img = thumbRef.current?.querySelector('.zoom-img') as HTMLElement | null;
-    if (img) img.style.transform = 'scale(2.5)';
-  }, []);
+    if (img) img.style.transform = 'scale(1.9)';
+  }, [reduceMotion]);
 
   const handleLeave = useCallback(() => {
     const img = thumbRef.current?.querySelector('.zoom-img') as HTMLElement | null;
@@ -32,6 +29,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
   }, []);
 
   const handleMove = useCallback((e: React.MouseEvent) => {
+    if (reduceMotion) return;
     const el = thumbRef.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
@@ -39,7 +37,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
     const y = ((e.clientY - rect.top) / rect.height) * 100;
     const img = el.querySelector('.zoom-img') as HTMLElement | null;
     if (img) img.style.transformOrigin = `${x}% ${y}%`;
-  }, []);
+  }, [reduceMotion]);
 
   const handleClick = useCallback(() => {
     // Reset zoom instantly before layout animation captures snapshot
@@ -72,16 +70,30 @@ export default function PaperCard({ paper }: PaperCardProps) {
       className="group"
     >
       <motion.div
-        whileHover={{ y: -2 }}
-        transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-        className="flex gap-5 p-4 rounded-xl cursor-pointer transition-all duration-200 hover:bg-[var(--bg-alt)] border border-transparent hover:border-[var(--border-color)]"
+        whileHover={reduceMotion ? undefined : { y: -2 }}
+        whileTap={reduceMotion ? undefined : { scale: 0.995 }}
+        transition={{ type: 'spring', stiffness: 420, damping: 32 }}
+        className="relative flex touch-manipulation gap-3 p-4 cursor-pointer transition-colors duration-200 border border-transparent hover:border-[var(--text-tertiary)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-secondary)] sm:gap-5"
         onClick={handleClick}
+        onKeyDown={(event) => {
+          if (event.target !== event.currentTarget) return;
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            handleClick();
+          }
+        }}
+        role="button"
+        tabIndex={0}
+        aria-expanded={expanded}
+        aria-controls={detailsId}
+        data-cursor="pointer"
       >
+        <span className="pointer-events-none absolute left-0 top-1/2 h-0 w-px bg-[var(--text-secondary)] transition-all duration-300 group-hover:top-2 group-hover:h-[calc(100%-1rem)]" />
         {/* Thumbnail — 2:1 ratio (w-56 h-28 = 224x112) */}
         {paper.image && (
           <div
             ref={thumbRef}
-            className="hidden sm:block flex-shrink-0 w-56 h-28 rounded-lg overflow-hidden bg-[var(--bg-alt)] ring-1 ring-[var(--border-color)] group-hover:ring-accent/30 transition-all duration-300 relative"
+            className="hidden sm:block flex-shrink-0 w-56 h-28 overflow-hidden bg-[var(--bg-alt)] border border-subtle group-hover:border-[var(--text-tertiary)] transition-colors duration-300 relative"
             onMouseEnter={expanded ? undefined : handleEnter}
             onMouseLeave={expanded ? undefined : handleLeave}
             onMouseMove={expanded ? undefined : handleMove}
@@ -96,7 +108,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
             />
             {expanded && (
               <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-                <svg className="w-5 h-5 text-white/70 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <svg className="w-5 h-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
               </div>
@@ -106,7 +118,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
             {!expanded && (
               <motion.div
                 layoutId={imgLayoutId}
-                className="absolute inset-0 rounded-lg overflow-hidden"
+                className="absolute inset-0 overflow-hidden"
                 transition={layoutTransition}
               >
                 <img
@@ -128,7 +140,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
 
         {/* Content */}
         <div className="flex-1 min-w-0">
-          <h3 className="font-heading font-semibold text-[15px] leading-snug mb-1.5 group-hover:text-accent transition-colors">
+          <h3 className="relative mb-1.5 font-heading text-[15px] font-semibold leading-snug transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-[var(--text-secondary)] after:transition-transform after:duration-300 group-hover:after:scale-x-100">
             {paper.title}
           </h3>
           <p className="text-sm text-muted mb-2 leading-relaxed">
@@ -146,13 +158,12 @@ export default function PaperCard({ paper }: PaperCardProps) {
           </p>
           <div className="flex items-center gap-2 flex-wrap">
             <span
-              className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold text-white"
-              style={{ backgroundColor: venueColor }}
+              className="inline-flex items-center text-xs font-medium uppercase tracking-wide text-muted"
             >
               {paper.venue.short} '{String(paper.year).slice(-2)}
             </span>
             {paper.award && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400">
+              <span className="inline-flex items-center text-xs font-medium text-muted">
                 {'\u{1F3C6}'} {paper.award}
               </span>
             )}
@@ -165,11 +176,13 @@ export default function PaperCard({ paper }: PaperCardProps) {
         </div>
 
         {/* Expand indicator */}
-        <div className="hidden sm:flex items-center">
+        <div className="flex min-h-11 w-6 flex-shrink-0 items-center justify-center self-center sm:min-h-0 sm:w-auto">
           <motion.svg
             animate={{ rotate: expanded ? 180 : 0 }}
             transition={{ duration: 0.2 }}
             className="w-4 h-4 text-faint"
+            aria-hidden="true"
+            focusable="false"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -184,6 +197,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
       <AnimatePresence>
         {expanded && (
           <motion.div
+            id={detailsId}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -191,14 +205,13 @@ export default function PaperCard({ paper }: PaperCardProps) {
             className="overflow-hidden"
           >
             <div className="px-4 pb-5 space-y-3">
-              {/* Image + Abstract side by side */}
-              <div className="flex gap-4">
+              {/* Mobile stacks the image above the abstract; sm+ remains side by side. */}
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
                 {/* Expanded image — layoutId shared transition */}
                 {paper.image && (
                   <motion.div
                     layoutId={imgLayoutId}
-                    className="flex-shrink-0 rounded-xl overflow-hidden bg-[var(--bg-alt)] ring-1 ring-[var(--border-color)]"
-                    style={{ width: '55%', aspectRatio: '2/1' }}
+                    className="aspect-[2/1] w-full overflow-hidden bg-[var(--bg-alt)] border border-subtle sm:w-[55%] sm:flex-shrink-0"
                     transition={layoutTransition}
                   >
                     <img
@@ -209,15 +222,15 @@ export default function PaperCard({ paper }: PaperCardProps) {
                   </motion.div>
                 )}
 
-                {/* Abstract — absolute-positioned so image alone determines row height */}
+                {/* Abstract flows normally on mobile; sm+ uses the image-defined row height. */}
                 {paper.abstract && (
                   <motion.div
                     initial={{ opacity: 0, x: 12 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1, duration: 0.25 }}
-                    className="flex-1 min-w-0 relative"
+                    className="w-full min-w-0 sm:relative sm:flex-1"
                   >
-                    <div className="absolute inset-0 overflow-y-auto pr-1 text-sm text-muted leading-relaxed scrollbar-thin">
+                    <div className="text-sm text-muted leading-relaxed sm:absolute sm:inset-0 sm:overflow-y-auto sm:pr-1 sm:scrollbar-thin">
                       <p>{paper.abstract}</p>
                     </div>
                   </motion.div>
@@ -236,17 +249,17 @@ export default function PaperCard({ paper }: PaperCardProps) {
                 </p>
                 <div className="flex items-center gap-2 flex-wrap">
                   {paper.pdf && (
-                    <a href={paper.pdf} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors">
+                    <a href={paper.pdf} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex min-h-11 touch-manipulation items-center justify-center gap-1.5 px-3 py-1.5 border border-subtle text-xs font-medium text-muted hover:border-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors sm:min-h-0">
                       {'\u{1F4C4}'} PDF
                     </a>
                   )}
                   {paper.doi && (
-                    <a href={paper.doi} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors">
+                    <a href={paper.doi} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex min-h-11 touch-manipulation items-center justify-center gap-1.5 px-3 py-1.5 border border-subtle text-xs font-medium text-muted hover:border-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors sm:min-h-0">
                       {'\u{1F517}'} DOI
                     </a>
                   )}
                   {paper.video && (
-                    <a href={paper.video} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors">
+                    <a href={paper.video} target="_blank" rel="noopener" onClick={(e) => e.stopPropagation()} className="inline-flex min-h-11 touch-manipulation items-center justify-center gap-1.5 px-3 py-1.5 border border-subtle text-xs font-medium text-muted hover:border-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors sm:min-h-0">
                       {'\u{1F3AC}'} Video
                     </a>
                   )}
@@ -254,7 +267,7 @@ export default function PaperCard({ paper }: PaperCardProps) {
                 {paper.tags && paper.tags.length > 0 && (
                   <div className="flex gap-1.5 flex-wrap">
                     {paper.tags.map((tag) => (
-                      <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-[var(--bg-alt)] text-faint">{tag}</span>
+                      <span key={tag} className="text-xs px-2 py-0.5 border border-subtle text-faint">{tag}</span>
                     ))}
                   </div>
                 )}
